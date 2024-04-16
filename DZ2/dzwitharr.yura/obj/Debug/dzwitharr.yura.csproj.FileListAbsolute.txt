@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\Yura_Schedrin\dzwitharr.yura\dzwitharr.yura\bin\Debug\dzwitharr.yura.exe.config
+C:\Users\Administrator\Documents\Yura_Schedrin\dzwitharr.yura\dzwitharr.yura\bin\Debug\dzwitharr.yura.exe
+C:\Users\Administrator\Documents\Yura_Schedrin\dzwitharr.yura\dzwitharr.yura\bin\Debug\dzwitharr.yura.pdb
+C:\Users\Administrator\Documents\Yura_Schedrin\dzwitharr.yura\dzwitharr.yura\obj\Debug\dzwitharr.yura.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\Yura_Schedrin\dzwitharr.yura\dzwitharr.yura\obj\Debug\dzwitharr.yura.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Yura_Schedrin\dzwitharr.yura\dzwitharr.yura\obj\Debug\dzwitharr.yura.exe
+C:\Users\Administrator\Documents\Yura_Schedrin\dzwitharr.yura\dzwitharr.yura\obj\Debug\dzwitharr.yura.pdb
