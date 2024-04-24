@@ -1,73 +1,94 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public abstract class Vehicle
 {
-    public abstract bool Move(int chance);
+    protected string name;
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+
+    public Vehicle(string name)
+    {
+        this.name = name;
+    }
+
+    public virtual bool Move(int chance)
+    {
+        return chance > 50; 
+    }
+
+    public abstract override string ToString();
 }
 
 public abstract class Car : Vehicle
 {
-    public override bool Move(int chance)
-    {
-        Random random = new Random();
-        chance = random.Next(1, 101);
-        return chance <= 80; 
-    }
+    public Car(string name) : base(name) { }
 }
 
 public abstract class Truck : Vehicle
 {
-    public override bool Move(int chance)
-    {
-        Random random = new Random();
-        chance = random.Next(1, 101);
-        return chance <= 90; 
-    }
+    public Truck(string name) : base(name) { }
 }
 
 public class Solaris : Car
 {
+    public Solaris(string name) : base(name) { }
+
     public override string ToString()
     {
-        return "Solaris едет";
+        Random random = new Random();
+        return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
     }
 }
 
 public class Rio : Car
 {
+    public Rio(string name) : base(name) { }
+
     public override string ToString()
     {
-        return "Rio едет";
+        Random random = new Random();
+        return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
     }
 }
 
 public class Kamaz : Truck
 {
+    public Kamaz(string name) : base(name) { }
+
     public override string ToString()
     {
-        return "Kamaz едет";
+        Random random = new Random();
+        return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
     }
 }
 
 public class Vaz : Truck
 {
+    public Vaz(string name) : base(name) { }
+
     public override string ToString()
     {
-        return "Vaz едет";
+        Random random = new Random();
+        return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
     }
-} 
+}
 
-namespace Cars
+class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
+        Solaris solaris = new Solaris("Solaris");
+        Rio rio = new Rio("Rio");
+        Kamaz kamaz = new Kamaz("Kamaz");
+        Vaz vaz = new Vaz("Vaz");
 
-        }
+        Console.WriteLine(solaris.ToString());
+        Console.WriteLine(rio.ToString());
+        Console.WriteLine(kamaz.ToString());
+        Console.WriteLine(vaz.ToString());
+        Console.ReadKey();
     }
 }
