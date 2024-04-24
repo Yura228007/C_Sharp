@@ -1,0 +1,7 @@
+C:\Users\Student_07\Documents\GIT\C_Sharp\Interfaces\bin\Debug\Interfaces.exe.config
+C:\Users\Student_07\Documents\GIT\C_Sharp\Interfaces\bin\Debug\Interfaces.exe
+C:\Users\Student_07\Documents\GIT\C_Sharp\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\Student_07\Documents\GIT\C_Sharp\Interfaces\obj\Debug\Interfaces.csproj.AssemblyReference.cache
+C:\Users\Student_07\Documents\GIT\C_Sharp\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Student_07\Documents\GIT\C_Sharp\Interfaces\obj\Debug\Interfaces.exe
+C:\Users\Student_07\Documents\GIT\C_Sharp\Interfaces\obj\Debug\Interfaces.pdb
