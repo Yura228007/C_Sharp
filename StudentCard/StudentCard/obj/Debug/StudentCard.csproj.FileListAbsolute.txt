@@ -1,0 +1,7 @@
+C:\Users\Administrator\source\repos\StudentCard\StudentCard\bin\Debug\StudentCard.exe.config
+C:\Users\Administrator\source\repos\StudentCard\StudentCard\bin\Debug\StudentCard.exe
+C:\Users\Administrator\source\repos\StudentCard\StudentCard\bin\Debug\StudentCard.pdb
+C:\Users\Administrator\source\repos\StudentCard\StudentCard\obj\Debug\StudentCard.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\StudentCard\StudentCard\obj\Debug\StudentCard.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\StudentCard\StudentCard\obj\Debug\StudentCard.exe
+C:\Users\Administrator\source\repos\StudentCard\StudentCard\obj\Debug\StudentCard.pdb
