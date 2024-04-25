@@ -113,5 +113,6 @@ class Program
         Console.WriteLine($"Average Programming Grade: {student1.GetAverageGrade("programming")}");
         Console.WriteLine($"Average Administration Grade: {student1.GetAverageGrade("administration")}");
         Console.WriteLine($"Average Design Grade: {student1.GetAverageGrade("design")}");
+        Console.ReadKey();
     }
 }
