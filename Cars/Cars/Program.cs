@@ -1,6 +1,16 @@
 ﻿using System;
 
-public abstract class Vehicle
+public interface IMovable
+{
+    bool Move(int chance);
+}
+
+public interface INamed
+{
+    string Name { get; set; }
+}
+
+public abstract class Vehicle : IMovable, INamed
 {
     protected string name;
     public string Name
@@ -16,7 +26,7 @@ public abstract class Vehicle
 
     public virtual bool Move(int chance)
     {
-        return chance > 50; 
+        return chance > 50;
     }
 
     public abstract override string ToString();
