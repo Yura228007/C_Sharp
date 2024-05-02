@@ -5,3 +5,10 @@ C:\C_Projects\C#\Git\C_Sharp\Cars\Cars\obj\Debug\Cars.csproj.AssemblyReference.c
 C:\C_Projects\C#\Git\C_Sharp\Cars\Cars\obj\Debug\Cars.csproj.CoreCompileInputs.cache
 C:\C_Projects\C#\Git\C_Sharp\Cars\Cars\obj\Debug\Cars.exe
 C:\C_Projects\C#\Git\C_Sharp\Cars\Cars\obj\Debug\Cars.pdb
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Cars\Cars\bin\Debug\Cars.exe.config
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Cars\Cars\bin\Debug\Cars.exe
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Cars\Cars\bin\Debug\Cars.pdb
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Cars\Cars\obj\Debug\Cars.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Cars\Cars\obj\Debug\Cars.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Cars\Cars\obj\Debug\Cars.exe
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Cars\Cars\obj\Debug\Cars.pdb

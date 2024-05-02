@@ -26,6 +26,22 @@ public abstract class Vehicle : IMovable, INamed
 
     public virtual bool Move(int chance)
     {
+        if (chance >= 30 && chance < 40)
+        {
+            throw new Exception($"{name} - спустилось колесо");
+        }
+        else if (chance >= 40 && chance < 50)
+        {
+            throw new Exception($"{name} - отказали тормоза");
+        }
+        else if (chance >= 20 && chance < 30)
+        {
+            throw new Exception($"{name} - разрядился двигатель");
+        }
+        else if (chance >= 0 && chance < 20)
+        {
+            throw new Exception($"{name} - зеркала сломаны");
+        }
         return chance > 50;
     }
 
@@ -49,7 +65,14 @@ public class Solaris : Car
     public override string ToString()
     {
         Random random = new Random();
-        return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
+        try
+        {
+            return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
+        }
+        catch (Exception ex)
+        {
+            return $"{name} is broken - {ex.Message}";
+        }
     }
 }
 
@@ -60,7 +83,14 @@ public class Rio : Car
     public override string ToString()
     {
         Random random = new Random();
-        return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
+        try
+        {
+            return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
+        }
+        catch (Exception ex)
+        {
+            return $"{name} is broken - {ex.Message}";
+        }
     }
 }
 
@@ -71,7 +101,14 @@ public class Kamaz : Truck
     public override string ToString()
     {
         Random random = new Random();
-        return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
+        try
+        {
+            return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
+        }
+        catch (Exception ex)
+        {
+            return $"{name} is broken - {ex.Message}";
+        }
     }
 }
 
@@ -82,7 +119,14 @@ public class Vaz : Truck
     public override string ToString()
     {
         Random random = new Random();
-        return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
+        try
+        {
+            return Move(random.Next(100)) ? $"{name} is moving" : $"{name} is broken";
+        }
+        catch (Exception ex)
+        {
+            return $"{name} is broken - {ex.Message}";
+        }
     }
 }
 
