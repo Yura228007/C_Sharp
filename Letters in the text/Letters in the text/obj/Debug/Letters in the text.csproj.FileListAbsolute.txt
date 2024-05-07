@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Letters in the text\Letters in the text\bin\Debug\Letters in the text.exe.config
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Letters in the text\Letters in the text\bin\Debug\Letters in the text.exe
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Letters in the text\Letters in the text\bin\Debug\Letters in the text.pdb
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Letters in the text\Letters in the text\obj\Debug\Letters in the text.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Letters in the text\Letters in the text\obj\Debug\Letters in the text.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Letters in the text\Letters in the text\obj\Debug\Letters in the text.exe
+C:\Users\Administrator\Documents\Yura_Schedrin\C_Sharp\Letters in the text\Letters in the text\obj\Debug\Letters in the text.pdb
