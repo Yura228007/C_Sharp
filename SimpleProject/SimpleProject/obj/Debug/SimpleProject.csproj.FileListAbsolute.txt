@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\Yura_Schedrin\SimpleProject\SimpleProject\bin\Debug\SimpleProject.exe.config
+C:\Users\Administrator\Documents\Yura_Schedrin\SimpleProject\SimpleProject\bin\Debug\SimpleProject.exe
+C:\Users\Administrator\Documents\Yura_Schedrin\SimpleProject\SimpleProject\bin\Debug\SimpleProject.pdb
+C:\Users\Administrator\Documents\Yura_Schedrin\SimpleProject\SimpleProject\obj\Debug\SimpleProject.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\Yura_Schedrin\SimpleProject\SimpleProject\obj\Debug\SimpleProject.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Yura_Schedrin\SimpleProject\SimpleProject\obj\Debug\SimpleProject.exe
+C:\Users\Administrator\Documents\Yura_Schedrin\SimpleProject\SimpleProject\obj\Debug\SimpleProject.pdb
