@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\Yura_Schedrin\\CarProgram\\",
+  "WorkspaceRootPath": "C:\\C_Projects\\C#\\Git\\C_Sharp\\CarProgram\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39745D76-381C-4466-B1C8-B43198632894}|CarProgram\\CarProgram.csproj|c:\\users\\administrator\\documents\\yura_schedrin\\carprogram\\carprogram\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39745D76-381C-4466-B1C8-B43198632894}|CarProgram\\CarProgram.csproj|solutionrelative:carprogram\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39745D76-381C-4466-B1C8-B43198632894}|CarProgram\\CarProgram.csproj|C:\\C_Projects\\C#\\Git\\C_Sharp\\CarProgram\\carprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39745D76-381C-4466-B1C8-B43198632894}|CarProgram\\CarProgram.csproj|solutionrelative:carprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39745D76-381C-4466-B1C8-B43198632894}|CarProgram\\CarProgram.csproj|c:\\users\\administrator\\documents\\yura_schedrin\\carprogram\\carprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39745D76-381C-4466-B1C8-B43198632894}|CarProgram\\CarProgram.csproj|solutionrelative:carprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39745D76-381C-4466-B1C8-B43198632894}|CarProgram\\CarProgram.csproj|c:\\c_projects\\c#\\git\\c_sharp\\carprogram\\carprogram\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39745D76-381C-4466-B1C8-B43198632894}|CarProgram\\CarProgram.csproj|solutionrelative:carprogram\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Yura_Schedrin\\CarProgram\\CarProgram\\Class1.cs",
+              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\CarProgram\\CarProgram\\Class1.cs",
               "RelativeDocumentMoniker": "CarProgram\\Class1.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Yura_Schedrin\\CarProgram\\CarProgram\\Class1.cs",
+              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\CarProgram\\CarProgram\\Class1.cs",
               "RelativeToolTip": "CarProgram\\Class1.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAABAAAAAmAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T15:12:54.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Yura_Schedrin\\CarProgram\\CarProgram\\Program.cs",
+              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\CarProgram\\CarProgram\\Program.cs",
               "RelativeDocumentMoniker": "CarProgram\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Yura_Schedrin\\CarProgram\\CarProgram\\Program.cs",
+              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\CarProgram\\CarProgram\\Program.cs",
               "RelativeToolTip": "CarProgram\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T14:57:40.71Z",
               "EditorCaption": ""

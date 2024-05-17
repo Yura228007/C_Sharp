@@ -1,2 +1,9 @@
 C:\Users\Administrator\Documents\Yura_Schedrin\CarProgram\CarProgram\obj\Debug\CarProgram.csproj.AssemblyReference.cache
 C:\Users\Administrator\Documents\Yura_Schedrin\CarProgram\CarProgram\obj\Debug\CarProgram.csproj.CoreCompileInputs.cache
+C:\C_Projects\C#\Git\C_Sharp\CarProgram\CarProgram\bin\Debug\CarProgram.exe.config
+C:\C_Projects\C#\Git\C_Sharp\CarProgram\CarProgram\bin\Debug\CarProgram.exe
+C:\C_Projects\C#\Git\C_Sharp\CarProgram\CarProgram\bin\Debug\CarProgram.pdb
+C:\C_Projects\C#\Git\C_Sharp\CarProgram\CarProgram\obj\Debug\CarProgram.csproj.AssemblyReference.cache
+C:\C_Projects\C#\Git\C_Sharp\CarProgram\CarProgram\obj\Debug\CarProgram.csproj.CoreCompileInputs.cache
+C:\C_Projects\C#\Git\C_Sharp\CarProgram\CarProgram\obj\Debug\CarProgram.exe
+C:\C_Projects\C#\Git\C_Sharp\CarProgram\CarProgram\obj\Debug\CarProgram.pdb

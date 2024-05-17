@@ -10,6 +10,7 @@ namespace prog
     {
         public delegate void aHandler(Car c);
         public event aHandler? collision;
+        public event Action? destroyed;
 
         string Name { set; get; }
 
@@ -22,7 +23,15 @@ namespace prog
 
         public void update(int a)
         {
-            if (a == 3) collision(this);
+            if (a == 3)
+            {
+                collision?.Invoke(this);
+                Life--;
+                if (Life < 1)
+                {
+                    destroyed?.Invoke();
+                }
+            }
         }
 
         public override string ToString()
