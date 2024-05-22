@@ -1,0 +1,7 @@
+C:\C_Projects\C#\Git\C_Sharp\DirectoriesForWorkers\DirectoriesForWorkers\obj\Debug\DirectoriesForWorkers.csproj.AssemblyReference.cache
+C:\C_Projects\C#\Git\C_Sharp\DirectoriesForWorkers\DirectoriesForWorkers\obj\Debug\DirectoriesForWorkers.csproj.CoreCompileInputs.cache
+C:\C_Projects\C#\Git\C_Sharp\DirectoriesForWorkers\DirectoriesForWorkers\bin\Debug\DirectoriesForWorkers.exe.config
+C:\C_Projects\C#\Git\C_Sharp\DirectoriesForWorkers\DirectoriesForWorkers\bin\Debug\DirectoriesForWorkers.exe
+C:\C_Projects\C#\Git\C_Sharp\DirectoriesForWorkers\DirectoriesForWorkers\bin\Debug\DirectoriesForWorkers.pdb
+C:\C_Projects\C#\Git\C_Sharp\DirectoriesForWorkers\DirectoriesForWorkers\obj\Debug\DirectoriesForWorkers.exe
+C:\C_Projects\C#\Git\C_Sharp\DirectoriesForWorkers\DirectoriesForWorkers\obj\Debug\DirectoriesForWorkers.pdb
