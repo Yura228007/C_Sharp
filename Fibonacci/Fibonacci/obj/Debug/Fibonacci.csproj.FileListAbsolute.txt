@@ -1,0 +1,7 @@
+C:\C_Projects\C#\Git\C_Sharp\Fibonacci\Fibonacci\bin\Debug\Fibonacci.exe.config
+C:\C_Projects\C#\Git\C_Sharp\Fibonacci\Fibonacci\bin\Debug\Fibonacci.exe
+C:\C_Projects\C#\Git\C_Sharp\Fibonacci\Fibonacci\bin\Debug\Fibonacci.pdb
+C:\C_Projects\C#\Git\C_Sharp\Fibonacci\Fibonacci\obj\Debug\Fibonacci.csproj.AssemblyReference.cache
+C:\C_Projects\C#\Git\C_Sharp\Fibonacci\Fibonacci\obj\Debug\Fibonacci.csproj.CoreCompileInputs.cache
+C:\C_Projects\C#\Git\C_Sharp\Fibonacci\Fibonacci\obj\Debug\Fibonacci.exe
+C:\C_Projects\C#\Git\C_Sharp\Fibonacci\Fibonacci\obj\Debug\Fibonacci.pdb
