@@ -1,0 +1,7 @@
+C:\C_Projects\C#\Git\C_Sharp\Linq_Students\Linq_Students\bin\Debug\Linq_Students.exe.config
+C:\C_Projects\C#\Git\C_Sharp\Linq_Students\Linq_Students\bin\Debug\Linq_Students.exe
+C:\C_Projects\C#\Git\C_Sharp\Linq_Students\Linq_Students\bin\Debug\Linq_Students.pdb
+C:\C_Projects\C#\Git\C_Sharp\Linq_Students\Linq_Students\obj\Debug\Linq_Students.csproj.AssemblyReference.cache
+C:\C_Projects\C#\Git\C_Sharp\Linq_Students\Linq_Students\obj\Debug\Linq_Students.csproj.CoreCompileInputs.cache
+C:\C_Projects\C#\Git\C_Sharp\Linq_Students\Linq_Students\obj\Debug\Linq_Students.exe
+C:\C_Projects\C#\Git\C_Sharp\Linq_Students\Linq_Students\obj\Debug\Linq_Students.pdb
