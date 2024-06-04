@@ -8,7 +8,7 @@ namespace WinFormsApp1
 {
     internal class Car_Toyota : Car
     {
-        public Car_Toyota(string _name, int _y) : base(_name, _y) { }
+        public Car_Toyota(string _name) : base(_name) { }
 
         public Car_Toyota(string _name, int _life, int _speed, int _y) : base(_name, _life, _speed, _y)
         {

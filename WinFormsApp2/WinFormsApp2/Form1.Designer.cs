@@ -35,6 +35,7 @@
             button_restart = new Button();
             groupBox1 = new GroupBox();
             show_attr_Y = new Label();
+            button_jump = new Button();
             ((System.ComponentModel.ISupportInitialize)car_player).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BG_1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BG_2).BeginInit();
@@ -83,7 +84,7 @@
             car_player.BackgroundImage = WinFormsApp2.Properties.Resources.car;
             car_player.BackgroundImageLayout = ImageLayout.Zoom;
             car_player.InitialImage = null;
-            car_player.Location = new Point(27, 165);
+            car_player.Location = new Point(27, 100);
             car_player.Margin = new Padding(3, 2, 3, 2);
             car_player.Name = "car_player";
             car_player.Size = new Size(134, 47);
@@ -213,16 +214,26 @@
             show_attr_Y.TabIndex = 13;
             show_attr_Y.Text = "label1";
             // 
+            // button_jump
+            // 
+            button_jump.Location = new Point(69, 296);
+            button_jump.Name = "button_jump";
+            button_jump.Size = new Size(75, 23);
+            button_jump.TabIndex = 14;
+            button_jump.Text = "button1";
+            button_jump.UseVisualStyleBackColor = true;
+            button_jump.Click += button_jump_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(608, 382);
+            Controls.Add(button_jump);
             Controls.Add(show_attr_Y);
             Controls.Add(groupBox1);
             Controls.Add(button_restart);
-            Controls.Add(button_stop_resume);
             Controls.Add(button_start);
             Controls.Add(show_hit);
             Controls.Add(car_player);
@@ -231,11 +242,13 @@
             Controls.Add(incr_button);
             Controls.Add(BG_2);
             Controls.Add(BG_1);
+            Controls.Add(button_stop_resume);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            KeyDown += Form1_KeyDown_1;
             ((System.ComponentModel.ISupportInitialize)car_player).EndInit();
             ((System.ComponentModel.ISupportInitialize)BG_1).EndInit();
             ((System.ComponentModel.ISupportInitialize)BG_2).EndInit();
@@ -265,5 +278,6 @@
         private Button button_restart;
         private GroupBox groupBox1;
         private Label show_attr_Y;
+        private Button button_jump;
     }
 }

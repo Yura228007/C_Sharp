@@ -1,4 +1,3 @@
-
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -8,15 +7,19 @@ namespace WinFormsApp1
         private int tmr_hit;
         private int attraction;
         private bool inGame;
+        private int accelerate_h;
+        const int accelerate_g = 1;
 
         public Form1()
         {
             InitializeComponent();
-            ct = new Car_Toyota("corolla", 165);
+            ct = new Car_Toyota("corolla");
             ct.hit_from_pit += ct.hit_handler;
             meter = 0;
-            attraction = 10;
+            attraction = 0;
             inGame = false;
+            ct.Y = 165;
+            accelerate_h = 6;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -45,20 +48,29 @@ namespace WinFormsApp1
         {
             if (e.KeyCode == Keys.A)
             {
-                attraction -= 200;
+                attraction -= 165;
             }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            attraction += accelerate_g - accelerate_h;
+
             meter = Math.Round(meter + ct.Speed * 0.1, 1);
             show_meter.Text = "Meters: " + meter.ToString();
             show_life.Text = "Life: " + ct.Life.ToString();
             Random rand = new Random();
-            
+
+            if (car_player.Top >= BG_1.Top - car_player.Height)
+            {
+                car_player.Top = BG_1.Top - car_player.Height-1;
+                attraction = 0;
+            }
+            car_player.Top += attraction;
+
+            accelerate_h = accelerate_h > 0 ? accelerate_h - 1 : accelerate_h = 0;
+
             show_attr_Y.Text = attraction.ToString() + "  ,  " + ct.Y;
-            ct.Y += attraction;
-            car_player.Location = new Point(car_player.Location.X, ct.Y);
 
             if (rand.Next(1, 180) == 3)
             {
@@ -135,6 +147,11 @@ namespace WinFormsApp1
 
         }
 
+        private void car_player_Click(object sender, EventArgs e)
+        {
+            accelerate_h = accelerate_g * 4;
+        }
+
         private void BG_1_Click(object sender, EventArgs e)
         {
 
@@ -143,6 +160,24 @@ namespace WinFormsApp1
         private void show_text_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.A)
+            {
+                accelerate_h = accelerate_g * 2;
+            }
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            accelerate_h = accelerate_g * 4;
+        }
+
+        private void button_jump_Click(object sender, EventArgs e)
+        {
+            accelerate_h = accelerate_g * 4;
         }
     }
 }

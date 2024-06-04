@@ -15,7 +15,7 @@ namespace WinFormsApp1
         public int Speed { get; set; }
         public string Name { get; set; }
 
-        public Car(string _name, int _y) :this(_name, 30, 1, _y) { }
+        public Car(string _name) :this(_name, 30, 1, 0) { }
         public Car(string _name, int _life, int _speed, int Y) 
         {
             Life = _life;
