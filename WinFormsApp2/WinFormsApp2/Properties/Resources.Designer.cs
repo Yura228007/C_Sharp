@@ -63,6 +63,16 @@ namespace WinFormsApp2.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap car {
+            get {
+                object obj = ResourceManager.GetObject("car", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap scale_1200 {
             get {
                 object obj = ResourceManager.GetObject("scale_1200", resourceCulture);
@@ -86,6 +96,16 @@ namespace WinFormsApp2.Properties {
         internal static System.Drawing.Bitmap scale_12002 {
             get {
                 object obj = ResourceManager.GetObject("scale_12002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scale_12003 {
+            get {
+                object obj = ResourceManager.GetObject("scale_12003", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

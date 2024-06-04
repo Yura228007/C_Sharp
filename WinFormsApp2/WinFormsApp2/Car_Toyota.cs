@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinFormsApp2
+namespace WinFormsApp1
 {
     internal class Car_Toyota : Car
     {
-        public Car_Toyota(string _name) : base(_name) { }
-        
+        public Car_Toyota(string _name, int _y) : base(_name, _y) { }
 
-        public Car_Toyota(string _name, int _life, int _speed) : base(_name, _life, _speed)
+        public Car_Toyota(string _name, int _life, int _speed, int _y) : base(_name, _life, _speed, _y)
         {
+
         }
 
         public bool hit_handler(int value)

@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinFormsApp2
+namespace WinFormsApp1
 {
     internal class CarLight
     {
-
-
-
     }
 }
