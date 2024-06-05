@@ -1,0 +1,16 @@
+C:\C_Projects\C#\Git\Note\Note\bin\Debug\net8.0-windows\Note.exe
+C:\C_Projects\C#\Git\Note\Note\bin\Debug\net8.0-windows\Note.deps.json
+C:\C_Projects\C#\Git\Note\Note\bin\Debug\net8.0-windows\Note.runtimeconfig.json
+C:\C_Projects\C#\Git\Note\Note\bin\Debug\net8.0-windows\Note.dll
+C:\C_Projects\C#\Git\Note\Note\bin\Debug\net8.0-windows\Note.pdb
+C:\C_Projects\C#\Git\Note\Note\obj\Debug\net8.0-windows\Note.csproj.GenerateResource.cache
+C:\C_Projects\C#\Git\Note\Note\obj\Debug\net8.0-windows\Note.GeneratedMSBuildEditorConfig.editorconfig
+C:\C_Projects\C#\Git\Note\Note\obj\Debug\net8.0-windows\Note.AssemblyInfoInputs.cache
+C:\C_Projects\C#\Git\Note\Note\obj\Debug\net8.0-windows\Note.AssemblyInfo.cs
+C:\C_Projects\C#\Git\Note\Note\obj\Debug\net8.0-windows\Note.csproj.CoreCompileInputs.cache
+C:\C_Projects\C#\Git\Note\Note\obj\Debug\net8.0-windows\Note.dll
+C:\C_Projects\C#\Git\Note\Note\obj\Debug\net8.0-windows\refint\Note.dll
+C:\C_Projects\C#\Git\Note\Note\obj\Debug\net8.0-windows\Note.pdb
+C:\C_Projects\C#\Git\Note\Note\obj\Debug\net8.0-windows\Note.genruntimeconfig.cache
+C:\C_Projects\C#\Git\Note\Note\obj\Debug\net8.0-windows\ref\Note.dll
+C:\C_Projects\C#\Git\Note\Note\obj\Debug\net8.0-windows\Note.Note_Main.resources
