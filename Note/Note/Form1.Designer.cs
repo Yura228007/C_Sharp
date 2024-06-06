@@ -35,6 +35,8 @@
             button_save = new Button();
             button_clear = new Button();
             show_result = new Label();
+            list_notes = new ListBox();
+            show_list = new Label();
             SuspendLayout();
             // 
             // text_title
@@ -50,15 +52,15 @@
             // 
             // comboBox1
             // 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9" });
             comboBox1.Location = new Point(186, 54);
             comboBox1.MaxLength = 32;
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(132, 24);
             comboBox1.TabIndex = 1;
-            comboBox1.Enter += comboBox1_Enter;
-            comboBox1.Leave += comboBox1_Leave;
             // 
             // dateTimePicker1
             // 
@@ -118,11 +120,34 @@
             show_result.TextAlign = ContentAlignment.TopCenter;
             show_result.Click += show_result_Click;
             // 
+            // list_notes
+            // 
+            list_notes.FormattingEnabled = true;
+            list_notes.ItemHeight = 15;
+            list_notes.Location = new Point(324, 54);
+            list_notes.Name = "list_notes";
+            list_notes.Size = new Size(326, 274);
+            list_notes.TabIndex = 7;
+            list_notes.SelectedIndexChanged += list_notes_SelectedIndexChanged;
+            // 
+            // show_list
+            // 
+            show_list.AutoSize = true;
+            show_list.Font = new Font("Segoe UI", 14F);
+            show_list.Location = new Point(324, 20);
+            show_list.Name = "show_list";
+            show_list.Size = new Size(149, 25);
+            show_list.TabIndex = 8;
+            show_list.Text = "Список заметок";
+            // 
             // Note_Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(324, 441);
+            BackColor = Color.PeachPuff;
+            ClientSize = new Size(662, 453);
+            Controls.Add(show_list);
+            Controls.Add(list_notes);
             Controls.Add(show_result);
             Controls.Add(button_clear);
             Controls.Add(button_save);
@@ -147,5 +172,7 @@
         private Button button_save;
         private Button button_clear;
         private Label show_result;
+        private ListBox list_notes;
+        private Label show_list;
     }
 }

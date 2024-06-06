@@ -1,3 +1,5 @@
+using Note.Properties;
+using System.Text;
 namespace Note
 {
     public partial class Note_Main : Form
@@ -8,16 +10,23 @@ namespace Note
         private string message_data;
         private string pathWithNote;
         private string path;
+        DirectoryInfo dir = new DirectoryInfo("data");
 
         public Note_Main()
         {
             InitializeComponent();
             text_ready = "";
-            path = "Note";
+            path = "data";
             pathWithNote = "";
             message_title = "Название. До 128 символов";
-            message_comboBox = "Важность. До 32 символов";
             message_data = "Текст. До 1024 символов";
+            DirectoryInfo dir = new DirectoryInfo("data");
+            if (!dir.Exists)
+            {
+                dir.Create();
+            }
+            string[] arr;
+            foreach (var i in dir.GetFiles()) list_notes.Items.Add(i.Name);
 
         }
 
@@ -25,30 +34,33 @@ namespace Note
         {
             text_title_Leave(sender, e);
             text_data_Leave(sender, e);
-            comboBox1_Leave(sender, e);
         }
 
         private void button_save_Click(object sender, EventArgs e)
         {
+
             if (text_title != null &&
                 text_title.Text != "" &&
                 text_title.Text != message_title &&
                 comboBox1 != null &&
-                comboBox1.Text != "" &&
-                comboBox1.Text != message_comboBox &&
+
+
                 text_data != null &&
                 text_data.Text != "" &&
                 text_data.Text != message_data)
             {
-                text_ready += "Название: " + text_title.Text + "\n";
-                text_ready += "Дата: " + dateTimePicker1.Text + "\n";
-                text_ready += "Важность: " + comboBox1.Text + "\n";
-                text_ready += "Текст заметки: " + text_data.Text;
+                text_ready += /*"Название: " +*/ text_title.Text + "\n";
+                text_ready += /*"Дата: " +*/ dateTimePicker1.Text + "\n";
+                text_ready += /*"Важность: " + */comboBox1.Text + "\n";
+                text_ready += /*"Текст заметки: " +*/ text_data.Text;
                 pathWithNote = path + @"\" + text_title.Text + ".txt";
                 using StreamWriter writer = new StreamWriter(pathWithNote);
                 {
                     writer.WriteLine(text_ready);
                 };
+
+                list_notes.Items.Add($"{text_title.Text} | {comboBox1.Text}");
+
                 text_ready = "";
                 text_title.Text = "";
                 comboBox1.Text = "";
@@ -61,7 +73,6 @@ namespace Note
             {
                 show_result.Text = "Ошибка!";
                 show_result.BackColor = Color.DarkRed;
-
             }
         }
 
@@ -111,27 +122,31 @@ namespace Note
             }
         }
 
-        private void comboBox1_Enter(object sender, EventArgs e)
-        {
-            comboBox1.ForeColor = Color.Black;
-            if (comboBox1.Text == message_comboBox)
-                comboBox1.Text = "";
-        }
-
-        private void comboBox1_Leave(object sender, EventArgs e)
-        {
-            if (comboBox1.Text == ""
-                || comboBox1.Text == message_comboBox
-                || comboBox1.Text == null)
-            {
-                comboBox1.ForeColor = Color.Gray;
-                comboBox1.Text = message_comboBox;
-            }
-        }
-
         private void show_result_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void list_notes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (list_notes.SelectedItems != null)
+            {
+                string selectNote = list_notes.SelectedItem.ToString();
+
+
+                string filePath = $"data/{selectNote.Substring(selectNote.IndexOf('|') + 2)}.txt";
+                using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                {
+                    using (StreamReader sr = new StreamReader(fs, Encoding.Unicode))
+                    {
+                        text_title.Text = selectNote.Substring(selectNote.IndexOf(" | ") + 1);
+                        text_title.Text = Path.GetFileNameWithoutExtension(text_title.Text);
+                        dateTimePicker1.Text = sr.ReadLine();
+                        comboBox1.Text = sr.ReadLine();
+                        text_data.Text = sr.ReadToEnd();
+                    }
+                }
+            }
         }
     }
 }
