@@ -33,11 +33,11 @@
             dateTimePicker1 = new DateTimePicker();
             text_data = new TextBox();
             button_save = new Button();
-            button_clear = new Button();
+            button_new = new Button();
             show_result = new Label();
             list_notes = new ListBox();
             show_list = new Label();
-            checkLabel = new Label();
+            button_delete = new Button();
             SuspendLayout();
             // 
             // text_title
@@ -53,6 +53,7 @@
             // 
             // comboBox1
             // 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9" });
@@ -61,10 +62,10 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(132, 24);
             comboBox1.TabIndex = 1;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.Enabled = false;
             dateTimePicker1.Font = new Font("Segoe UI", 10F);
             dateTimePicker1.Location = new Point(12, 54);
             dateTimePicker1.Name = "dateTimePicker1";
@@ -97,27 +98,27 @@
             button_save.UseVisualStyleBackColor = true;
             button_save.Click += button_save_Click;
             // 
-            // button_clear
+            // button_new
             // 
-            button_clear.Font = new Font("Segoe UI", 12F);
-            button_clear.Location = new Point(12, 339);
-            button_clear.Name = "button_clear";
-            button_clear.Size = new Size(127, 42);
-            button_clear.TabIndex = 5;
-            button_clear.Text = "Очистить поля";
-            button_clear.UseVisualStyleBackColor = true;
-            button_clear.Click += button_clear_Click;
+            button_new.Font = new Font("Segoe UI", 12F);
+            button_new.Location = new Point(12, 339);
+            button_new.Name = "button_new";
+            button_new.Size = new Size(140, 42);
+            button_new.TabIndex = 5;
+            button_new.Text = "Новая заметка";
+            button_new.UseVisualStyleBackColor = true;
+            button_new.Click += button_new_Click;
             // 
             // show_result
             // 
             show_result.AutoSize = true;
             show_result.BackColor = Color.Coral;
-            show_result.Font = new Font("Segoe UI", 26.24F);
+            show_result.Font = new Font("Segoe UI", 20F);
             show_result.Location = new Point(12, 384);
             show_result.Name = "show_result";
-            show_result.Size = new Size(302, 47);
+            show_result.Size = new Size(576, 37);
             show_result.TabIndex = 6;
-            show_result.Text = "Сделайте заметку";
+            show_result.Text = "Сделайте заметку или выберите имеющуюся";
             show_result.TextAlign = ContentAlignment.TopCenter;
             show_result.Click += show_result_Click;
             // 
@@ -141,26 +142,29 @@
             show_list.TabIndex = 8;
             show_list.Text = "Список заметок";
             // 
-            // checkLabel
+            // button_delete
             // 
-            checkLabel.AutoSize = true;
-            checkLabel.Location = new Point(45, 228);
-            checkLabel.Name = "checkLabel";
-            checkLabel.Size = new Size(38, 15);
-            checkLabel.TabIndex = 9;
-            checkLabel.Text = "label1";
+            button_delete.Font = new Font("Segoe UI", 12F);
+            button_delete.Location = new Point(324, 339);
+            button_delete.Name = "button_delete";
+            button_delete.Size = new Size(173, 42);
+            button_delete.TabIndex = 9;
+            button_delete.Text = "Удалить";
+            button_delete.UseVisualStyleBackColor = true;
+            button_delete.Visible = false;
+            button_delete.Click += button_delete_Click;
             // 
             // Note_Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PeachPuff;
-            ClientSize = new Size(662, 453);
-            Controls.Add(checkLabel);
+            ClientSize = new Size(664, 433);
+            Controls.Add(button_delete);
             Controls.Add(show_list);
             Controls.Add(list_notes);
             Controls.Add(show_result);
-            Controls.Add(button_clear);
+            Controls.Add(button_new);
             Controls.Add(button_save);
             Controls.Add(text_data);
             Controls.Add(dateTimePicker1);
@@ -169,6 +173,7 @@
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Note_Main";
             Text = "Заметки";
+            TopMost = true;
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -181,10 +186,10 @@
         private DateTimePicker dateTimePicker1;
         private TextBox text_data;
         private Button button_save;
-        private Button button_clear;
+        private Button button_new;
         private Label show_result;
         private ListBox list_notes;
         private Label show_list;
-        private Label checkLabel;
+        private Button button_delete;
     }
 }

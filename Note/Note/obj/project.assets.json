@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Yurasik\\.nuget\\packages\\": {}
+    "C:\\Users\\Student_07\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Note\\Note\\Note.csproj",
+      "projectUniqueName": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Note\\Note\\Note.csproj",
       "projectName": "Note",
-      "projectPath": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Note\\Note\\Note.csproj",
-      "packagesPath": "C:\\Users\\Yurasik\\.nuget\\packages\\",
-      "outputPath": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Note\\Note\\obj\\",
+      "projectPath": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Note\\Note\\Note.csproj",
+      "packagesPath": "C:\\Users\\Student_07\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Note\\Note\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Yurasik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Student_07\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
