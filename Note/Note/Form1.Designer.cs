@@ -37,6 +37,7 @@
             show_result = new Label();
             list_notes = new ListBox();
             show_list = new Label();
+            checkLabel = new Label();
             SuspendLayout();
             // 
             // text_title
@@ -52,7 +53,6 @@
             // 
             // comboBox1
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9" });
@@ -61,6 +61,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(132, 24);
             comboBox1.TabIndex = 1;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // dateTimePicker1
             // 
@@ -140,12 +141,22 @@
             show_list.TabIndex = 8;
             show_list.Text = "Список заметок";
             // 
+            // checkLabel
+            // 
+            checkLabel.AutoSize = true;
+            checkLabel.Location = new Point(45, 228);
+            checkLabel.Name = "checkLabel";
+            checkLabel.Size = new Size(38, 15);
+            checkLabel.TabIndex = 9;
+            checkLabel.Text = "label1";
+            // 
             // Note_Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PeachPuff;
             ClientSize = new Size(662, 453);
+            Controls.Add(checkLabel);
             Controls.Add(show_list);
             Controls.Add(list_notes);
             Controls.Add(show_result);
@@ -174,5 +185,6 @@
         private Label show_result;
         private ListBox list_notes;
         private Label show_list;
+        private Label checkLabel;
     }
 }

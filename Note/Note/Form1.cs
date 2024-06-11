@@ -59,7 +59,7 @@ namespace Note
                     writer.WriteLine(text_ready);
                 };
 
-                list_notes.Items.Add($"{text_title.Text} | {comboBox1.Text}");
+                list_notes.Items.Add($"{text_title.Text}.txt");
 
                 text_ready = "";
                 text_title.Text = "";
@@ -133,20 +133,25 @@ namespace Note
             {
                 string selectNote = list_notes.SelectedItem.ToString();
 
-
-                string filePath = $"data/{selectNote.Substring(selectNote.IndexOf('|') + 2)}.txt";
-                using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                string filePath = $"data/{selectNote}";
+                using (FileStream fs = new FileStream(filePath, FileMode.Open))
                 {
                     using (StreamReader sr = new StreamReader(fs, Encoding.Unicode))
                     {
-                        text_title.Text = selectNote.Substring(selectNote.IndexOf(" | ") + 1);
-                        text_title.Text = Path.GetFileNameWithoutExtension(text_title.Text);
-                        dateTimePicker1.Text = sr.ReadLine();
+                        text_title.Text = Path.GetFileNameWithoutExtension(selectNote);
+                        //System.Globalization.CultureInfo provider = new System.Globalization.CultureInfo("ru-RU");
+                        //dateTimePicker1.Value = DateTime.ParseExact(sr.ReadLine(), "d MMMM yyyy ã.", provider);
+                        checkLabel.Text = sr.ReadLine();
                         comboBox1.Text = sr.ReadLine();
                         text_data.Text = sr.ReadToEnd();
                     }
                 }
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
