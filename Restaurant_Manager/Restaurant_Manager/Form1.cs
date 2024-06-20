@@ -25,8 +25,7 @@ namespace Restaurant_Manager
                         anonLabel_table_products(line.Substring(0, line.IndexOf("-") - 1), Int32.Parse(line.Substring(line.IndexOf("-") + 2)));
             }
             //заполнение списка блюд
-            foreach (var i in dishesDir.GetFiles())
-                list_dishes.Items.Add(Path.GetFileNameWithoutExtension(i.Name));
+
             //заполнение комбоБокса продуктов для добавление продуктов к блюду
             using (StreamReader sr = new StreamReader(filePath_products))
             {
@@ -34,13 +33,13 @@ namespace Restaurant_Manager
                     if (line != "")
                         nameOf_productFor_dish.Items.Add(line.Substring(0, line.IndexOf("-") - 1));
             }
-            //foreach (Control control in table_prodList.Controls)
-            //{
-            //    if (control is Label)
-            //    {
-            //        nameOf_productFor_prodList.Items.Add(control.Text);
-            //    }
-            //}
+
+            List<string> dishes_name = new List<string>();
+            /*            foreach (var i in dishesDir.GetFiles())
+                        {
+                            dishes_name.Add(i.Name);
+                            using (StreamReader sr = new StreamReader($"{dirPath_Dishes}/{i.Name}.txt")) ;
+                        }*/
         }
         private void check_minusOne_inValue(object sender, EventArgs e)
         {
@@ -101,6 +100,7 @@ namespace Restaurant_Manager
             if (nameOf_productFor_prodList.Text != "")
             {
                 anonLabel_table_products(nameOf_productFor_prodList.Text, 1);
+                nameOf_productFor_dish.Items.Add(nameOf_productFor_prodList.Text);
             }
             else MessageBox.Show("Напишите название продукта");
         }
@@ -121,17 +121,12 @@ namespace Restaurant_Manager
             table_info_aboutDish.Controls.Add(numericUpDown);
         }
 
+        //должно быть заменено на клик по лейблу
         private void list_dishes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (list_dishes.SelectedItem != null)
+/*            if (list_dishes.SelectedItem != null)
             {
                 table_info_aboutDish.Controls.Clear();
-                table_info_aboutDish.Visible = true;
-                show_info_about_dish.Visible = true;
-                panel_infoAbout_dish.Visible = true;
-                nameOf_productFor_dish.Visible = true;
-                button_add_productFor_dish.Visible = true;
-                button_save_dish.Visible = true;
                 using (StreamReader sr = new StreamReader($"{dirPath_Dishes}/{list_dishes.SelectedItem.ToString()}.txt"))
                 {
                     foreach (string line in sr.ReadToEnd().Split("\n"))
@@ -139,6 +134,29 @@ namespace Restaurant_Manager
                             anonLabel_table_dishes(line.Substring(0, line.IndexOf("-") - 1), Int32.Parse(line.Substring(line.IndexOf("-") + 2)));
                 }
                 button_delete_dish.Visible = true;
+            }*/
+        }
+
+        private void listDish_item_Click(object sender, EventArgs e)
+        {
+            button_delete_dish.Visible = true;
+
+            nameFor_newDish.Text = ((Label)sender).Text;
+            newDish_cost.Value = Int32.Parse(((Label)((Label)sender).Tag).Text);
+            using (StreamReader sr = new StreamReader($"{dirPath_Dishes}/{((Label)sender).Text}.txt"))
+            {
+                string recept = sr.ReadToEnd();
+                /*string[] products = recept.Split("\n");
+                for (int i = 0; i < products.Length; i++)
+                {
+                    string[] t = products[i].Split(new char[] {':'});
+                    table_info_aboutDish.Controls.Add();
+                }*/
+                foreach (string line in recept.Split("\n"))
+                {
+                    if (line != "")
+                        anonLabel_table_dishes(line.Substring(0, line.IndexOf(":")), Convert.ToInt32(line.Substring(line.IndexOf(":")+1)));
+                }
             }
         }
 
@@ -149,23 +167,47 @@ namespace Restaurant_Manager
                 MessageBoxDefaultButton.Button1);
             if (res == DialogResult.Yes)
             {
-                if (list_dishes.SelectedItem != null)
+/*                if (list_dishes.SelectedItem != null)
                 {
                     File.Delete($"{dirPath_Dishes}/{list_dishes.SelectedItem.ToString()}.txt");
                     list_dishes.Items.Remove(list_dishes.SelectedItem.ToString());
-                    button_delete_dish.Visible = false;
-                    table_info_aboutDish.Visible = false;
-                    table_info_aboutDish.Controls.Clear();
-                    show_info_about_dish.Visible = false;
-                    panel_infoAbout_dish.Visible = false;
-                }
+                }*/
             }
         }
 
         private void button_dishes_load_Click(object sender, EventArgs e)
         {
-            list_dishes.Items.Add(nameFor_newDish.Text);
-            if (!File.Exists($"{dirPath_Dishes}/{nameFor_newDish.Text}.txt")) File.Create($"{dirPath_Dishes}/{nameFor_newDish.Text}.txt").Close();
+            if (nameFor_newDish.Text != "")
+            {
+                if (newDish_cost.Value != 0)
+                {
+                    if (table_info_aboutDish.Controls.Count > 0)
+                    {
+                        using (StreamWriter wr = new StreamWriter($"{dirPath_Dishes}/{nameFor_newDish.Text}.txt"))
+                        {
+                            wr.WriteLine(newDish_cost.Value);
+                            foreach (Control control in table_info_aboutDish.Controls)
+                            {
+                                if (control is Label)
+                                {
+                                    wr.Write(((Label)control).Text);
+                                }
+                                else
+                                {
+                                    wr.WriteLine($":{((NumericUpDown)control).Value}");
+                                }
+                            }
+                        }
+                        listDish_update(1, nameFor_newDish.Text, (int)newDish_cost.Value);
+                        newDish_cost.Value = 0;
+                        table_info_aboutDish.Controls.Clear();
+                        nameFor_newDish.Text = "";
+                    }
+                    else MessageBox.Show("Добавьте ингредиенты!");
+                }
+                else MessageBox.Show("Укажите цену!");
+            }
+            else MessageBox.Show("Укажите название блюда!");
         }
 
         private void button_add_productFor_dish_Click(object sender, EventArgs e)
@@ -173,21 +215,37 @@ namespace Restaurant_Manager
             anonLabel_table_dishes(nameOf_productFor_dish.Text, 1);
         }
 
-        private void button_save_dish_Click(object sender, EventArgs e)
+        private void listDish_update(int amount, string dish_name, int cost)
         {
-            using (StreamWriter writer = new StreamWriter($"{dirPath_Dishes}/{list_dishes.SelectedItem.ToString()}.txt")) 
+            if (table_list_dishes.Controls.Find(dish_name, false).Count() > 0)
             {
-                foreach (Control control in table_info_aboutDish.Controls)
-                {
-                    if (control is Label)
-                    {
-                        writer.Write($"{((Label)control).Text} - ");
-                    }
-                    else
-                    {
-                        writer.WriteLine(((NumericUpDown)control).Value);
-                    }
-                }
+                ((Label)((Label)table_list_dishes.
+                    Controls.Find(dish_name, false)[0]).Tag).Text = amount.ToString();
+                ((Label)((Label)((Label)table_list_dishes.
+                    Controls.Find(dish_name, false)[0]).Tag).Tag).Text = cost.ToString();
+            }
+            else
+            {
+                Label d_n = new Label();
+                d_n.Name = dish_name;
+                d_n.Text = dish_name;
+                d_n.Click += listDish_item_Click;
+
+                Label d_a = new Label();
+                d_a.Text = amount.ToString();
+                d_n.Tag = d_a;
+
+                Label d_c = new Label();
+                d_c.Text = cost.ToString();
+                d_a.Tag = d_c;
+
+                d_a.Tag = d_n;
+                d_c.Tag = d_n;
+                d_n.Tag = d_a;
+
+                table_list_dishes.Controls.Add(d_a);
+                table_list_dishes.Controls.Add(d_n);
+                table_list_dishes.Controls.Add(d_c);
             }
         }
     }
