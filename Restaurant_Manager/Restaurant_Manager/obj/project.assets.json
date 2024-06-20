@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C_Projects\\C#\\Git\\Restaurant_Manager\\Restaurant_Manager\\Restaurant_Manager.csproj",
+      "projectUniqueName": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Restaurant_Manager\\Restaurant_Manager\\Restaurant_Manager.csproj",
       "projectName": "Restaurant_Manager",
-      "projectPath": "C:\\C_Projects\\C#\\Git\\Restaurant_Manager\\Restaurant_Manager\\Restaurant_Manager.csproj",
+      "projectPath": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Restaurant_Manager\\Restaurant_Manager\\Restaurant_Manager.csproj",
       "packagesPath": "C:\\Users\\Yurasik\\.nuget\\packages\\",
-      "outputPath": "C:\\C_Projects\\C#\\Git\\Restaurant_Manager\\Restaurant_Manager\\obj\\",
+      "outputPath": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Restaurant_Manager\\Restaurant_Manager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Yurasik\\AppData\\Roaming\\NuGet\\NuGet.Config",
