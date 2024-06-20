@@ -1,0 +1,16 @@
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\obj\Debug\net8.0-windows\Restaurant_Manager.Form1.resources
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\obj\Debug\net8.0-windows\Restaurant_Manager.csproj.GenerateResource.cache
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\obj\Debug\net8.0-windows\Restaurant_Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\obj\Debug\net8.0-windows\Restaurant_Manager.AssemblyInfoInputs.cache
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\obj\Debug\net8.0-windows\Restaurant_Manager.AssemblyInfo.cs
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\obj\Debug\net8.0-windows\Restaurant_Manager.csproj.CoreCompileInputs.cache
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\bin\Debug\net8.0-windows\Restaurant_Manager.exe
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\bin\Debug\net8.0-windows\Restaurant_Manager.deps.json
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\bin\Debug\net8.0-windows\Restaurant_Manager.runtimeconfig.json
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\bin\Debug\net8.0-windows\Restaurant_Manager.dll
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\bin\Debug\net8.0-windows\Restaurant_Manager.pdb
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\obj\Debug\net8.0-windows\Restaurant_Manager.dll
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\obj\Debug\net8.0-windows\refint\Restaurant_Manager.dll
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\obj\Debug\net8.0-windows\Restaurant_Manager.pdb
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\obj\Debug\net8.0-windows\Restaurant_Manager.genruntimeconfig.cache
+C:\C_Projects\C#\Git\Restaurant_Manager\Restaurant_Manager\obj\Debug\net8.0-windows\ref\Restaurant_Manager.dll
