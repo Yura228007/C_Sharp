@@ -50,6 +50,8 @@
             textBox_password2 = new TextBox();
             label_login = new Label();
             label_password = new Label();
+            button_login2 = new Button();
+            button_back = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown_old).BeginInit();
             SuspendLayout();
             // 
@@ -62,6 +64,7 @@
             button_login1.TabIndex = 0;
             button_login1.Text = "войти";
             button_login1.UseVisualStyleBackColor = true;
+            button_login1.Click += button_login1_Click;
             // 
             // button_reg1
             // 
@@ -285,11 +288,37 @@
             label_password.Text = "Пароль";
             label_password.Visible = false;
             // 
+            // button_login2
+            // 
+            button_login2.Font = new Font("Segoe UI", 14F);
+            button_login2.Location = new Point(272, 312);
+            button_login2.Name = "button_login2";
+            button_login2.Size = new Size(139, 34);
+            button_login2.TabIndex = 34;
+            button_login2.Text = "войти";
+            button_login2.UseVisualStyleBackColor = true;
+            button_login2.Visible = false;
+            button_login2.Click += button_login2_Click;
+            // 
+            // button_back
+            // 
+            button_back.Font = new Font("Segoe UI", 14F);
+            button_back.Location = new Point(12, 234);
+            button_back.Name = "button_back";
+            button_back.Size = new Size(109, 34);
+            button_back.TabIndex = 35;
+            button_back.Text = "назад";
+            button_back.UseVisualStyleBackColor = true;
+            button_back.Visible = false;
+            button_back.Click += button_back_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(910, 592);
+            Controls.Add(button_back);
+            Controls.Add(button_login2);
             Controls.Add(label_password);
             Controls.Add(label_login);
             Controls.Add(textBox_password2);
@@ -344,5 +373,7 @@
         private TextBox textBox_password2;
         private Label label_login;
         private Label label_password;
+        private Button button_login2;
+        private Button button_back;
     }
 }
