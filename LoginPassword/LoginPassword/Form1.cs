@@ -9,7 +9,12 @@ namespace LoginPassword
             //создание папки data
             DirectoryInfo dir = new DirectoryInfo("data");
             if (!dir.Exists) dir.Create();
-
+            foreach (var file in dir.GetFiles())
+            {
+                comboBox_login1.Items.Add(Path.GetFileNameWithoutExtension(file.Name));
+            }
+            string[] post = new string[] { "HARDWORKER", "MIDLEWORKER", "LOWWORKER" };
+            comboBox_work.Items.AddRange(post);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -43,7 +48,7 @@ namespace LoginPassword
             numericUpDown_old.Visible = true;
             radioButton_man.Visible = true;
             radioButton_women.Visible = true;
-            textBox_work.Visible = true;
+            comboBox_work.Visible = true;
             textBox_numberTelephone.Visible = true;
             textBox_homeNumber.Visible = true;
             button_save.Visible = true;
@@ -54,7 +59,7 @@ namespace LoginPassword
             textBox_password2.Text = "";
             textBox_fio.Text = "";
             numericUpDown_old.Value = 0;
-            textBox_work.Text = "";
+            comboBox_work.Text = "";
             textBox_numberTelephone.Text = "";
             checkBox_homeNumber.Checked = false;
             textBox_homeNumber.Text = "";
@@ -70,7 +75,7 @@ namespace LoginPassword
                 {
                     if (numericUpDown_old.Value != 0)
                     {
-                        if (textBox_work.Text != "")
+                        if (comboBox_work.Text != "")
                         {
                             if (textBox_numberTelephone.Text != "")
                             {
@@ -83,7 +88,7 @@ namespace LoginPassword
                                             wr.WriteLine(textBox_password2.Text);
                                             wr.WriteLine(textBox_fio.Text);
                                             wr.WriteLine(numericUpDown_old.Value);
-                                            wr.WriteLine(textBox_work.Text);
+                                            wr.WriteLine(comboBox_work.Text);
                                             wr.WriteLine(textBox_numberTelephone.Text);
                                             wr.WriteLine(checkBox_homeNumber.Checked.ToString());
                                             if (checkBox_homeNumber.Checked)
@@ -94,6 +99,12 @@ namespace LoginPassword
                                             else
                                                 wr.Write("women");
                                         }
+
+                                        if (!comboBox_login1.Items.Contains(textBox_login2.Text))
+                                        {
+                                            comboBox_login1.Items.Add(textBox_login2.Text);
+                                        }
+
                                         label1.Visible = false;
                                         label2.Visible = false;
                                         label3.Visible = false;
@@ -108,7 +119,7 @@ namespace LoginPassword
                                         numericUpDown_old.Visible = false;
                                         radioButton_man.Visible = false;
                                         radioButton_women.Visible = false;
-                                        textBox_work.Visible = false;
+                                        comboBox_work.Visible = false;
                                         textBox_numberTelephone.Visible = false;
                                         textBox_homeNumber.Visible = false;
                                         button_save.Visible = false;
@@ -133,7 +144,7 @@ namespace LoginPassword
 
         private void button_login1_Click(object sender, EventArgs e)
         {
-            textBox_login1.Visible = true;
+            comboBox_login1.Visible = true;
             textBox_password1.Visible = true;
             button_login2.Visible = true;
             button_login1.Visible = false;
@@ -143,17 +154,27 @@ namespace LoginPassword
 
         private void button_login2_Click(object sender, EventArgs e)
         {
-            if (textBox_login1.Text != "")
+            if (comboBox_login1.Text != "")
             {
                 if (textBox_password1.Text != "")
                 {
-                    if (File.Exists($"data/{textBox_login1.Text}.txt"))
+                    if (File.Exists($"data/{comboBox_login1.Text}.txt"))
                     {
-                        using (StreamReader reader = new StreamReader($"data/{textBox_login1.Text}.txt"))
+                        using (StreamReader reader = new StreamReader($"data/{comboBox_login1.Text}.txt"))
                         {
                             string passwordT = reader.ReadLine();
                             if (textBox_password1.Text == passwordT)
                             {
+                                textBox_login2.Text = "";
+                                textBox_password2.Text = "";
+                                textBox_fio.Text = "";
+                                numericUpDown_old.Value = 0;
+                                comboBox_work.Text = "";
+                                textBox_numberTelephone.Text = "";
+                                checkBox_homeNumber.Checked = false;
+                                textBox_homeNumber.Text = "";
+                                radioButton_man.Checked = false;
+                                radioButton_women.Checked = false;
                                 label1.Visible = true;
                                 label2.Visible = true;
                                 label3.Visible = true;
@@ -168,21 +189,21 @@ namespace LoginPassword
                                 numericUpDown_old.Visible = true;
                                 radioButton_man.Visible = true;
                                 radioButton_women.Visible = true;
-                                textBox_work.Visible = true;
+                                comboBox_work.Visible = true;
                                 textBox_numberTelephone.Visible = true;
                                 textBox_homeNumber.Visible = true;
                                 button_save.Visible = true;
                                 textBox_login2.ReadOnly = true;
-                                textBox_login1.Visible = false;
+                                comboBox_login1.Visible = false;
                                 textBox_password1.Visible = false;
                                 button_login2.Visible = false;
                                 button_back.Visible = false;
 
-                                textBox_login2.Text = textBox_login1.Text;
+                                textBox_login2.Text = comboBox_login1.Text;
                                 textBox_password2.Text = passwordT;
                                 textBox_fio.Text = reader.ReadLine();
                                 numericUpDown_old.Value = Int32.Parse(reader.ReadLine());
-                                textBox_work.Text = reader.ReadLine();
+                                comboBox_work.Text = reader.ReadLine();
                                 textBox_numberTelephone.Text = reader.ReadLine();
                                 if (reader.ReadLine() == "True")
                                 {
@@ -201,7 +222,7 @@ namespace LoginPassword
                                 {
                                     radioButton_women.Checked = true;
                                 }
-                                textBox_login1.Text = "";
+                                comboBox_login1.Text = "";
                                 textBox_password1.Text = "";
 
                                 MessageBox.Show("Вы успешно вошли в аккаунт", "Оповещение", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -222,8 +243,8 @@ namespace LoginPassword
         {
             button_login1.Visible = true;
             button_reg1.Visible = true;
-            textBox_login1.Text = "";
-            textBox_login1.Visible = false;
+            comboBox_login1.Text = "";
+            comboBox_login1.Visible = false;
             textBox_password1.Text = "";
             textBox_password1.Visible = false;
             button_login2.Visible = false;

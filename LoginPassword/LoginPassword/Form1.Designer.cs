@@ -30,7 +30,6 @@
         {
             button_login1 = new Button();
             button_reg1 = new Button();
-            textBox_login1 = new TextBox();
             textBox_password1 = new TextBox();
             button_save = new Button();
             label5 = new Label();
@@ -40,7 +39,6 @@
             textBox_homeNumber = new TextBox();
             textBox_numberTelephone = new TextBox();
             label4 = new Label();
-            textBox_work = new TextBox();
             label3 = new Label();
             label2 = new Label();
             textBox_fio = new TextBox();
@@ -52,6 +50,8 @@
             label_password = new Label();
             button_login2 = new Button();
             button_back = new Button();
+            comboBox_login1 = new ComboBox();
+            comboBox_work = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)numericUpDown_old).BeginInit();
             SuspendLayout();
             // 
@@ -76,15 +76,6 @@
             button_reg1.Text = "регистрация";
             button_reg1.UseVisualStyleBackColor = true;
             button_reg1.Click += button_reg1_Click;
-            // 
-            // textBox_login1
-            // 
-            textBox_login1.Font = new Font("Segoe UI", 14F);
-            textBox_login1.Location = new Point(127, 236);
-            textBox_login1.Name = "textBox_login1";
-            textBox_login1.Size = new Size(284, 32);
-            textBox_login1.TabIndex = 2;
-            textBox_login1.Visible = false;
             // 
             // textBox_password1
             // 
@@ -187,15 +178,6 @@
             label4.TabIndex = 21;
             label4.Text = "Номер телефона";
             label4.Visible = false;
-            // 
-            // textBox_work
-            // 
-            textBox_work.Font = new Font("Segoe UI", 14F);
-            textBox_work.Location = new Point(678, 217);
-            textBox_work.Name = "textBox_work";
-            textBox_work.Size = new Size(189, 32);
-            textBox_work.TabIndex = 20;
-            textBox_work.Visible = false;
             // 
             // label3
             // 
@@ -312,11 +294,35 @@
             button_back.Visible = false;
             button_back.Click += button_back_Click;
             // 
+            // comboBox_login1
+            // 
+            comboBox_login1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox_login1.Font = new Font("Segoe UI", 14F);
+            comboBox_login1.FormattingEnabled = true;
+            comboBox_login1.Location = new Point(127, 236);
+            comboBox_login1.Name = "comboBox_login1";
+            comboBox_login1.Size = new Size(284, 33);
+            comboBox_login1.TabIndex = 36;
+            comboBox_login1.Visible = false;
+            // 
+            // comboBox_work
+            // 
+            comboBox_work.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox_work.Font = new Font("Segoe UI", 14F);
+            comboBox_work.FormattingEnabled = true;
+            comboBox_work.Location = new Point(678, 217);
+            comboBox_work.Name = "comboBox_work";
+            comboBox_work.Size = new Size(189, 33);
+            comboBox_work.TabIndex = 37;
+            comboBox_work.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(910, 592);
+            Controls.Add(comboBox_work);
+            Controls.Add(comboBox_login1);
             Controls.Add(button_back);
             Controls.Add(button_login2);
             Controls.Add(label_password);
@@ -332,13 +338,11 @@
             Controls.Add(textBox_homeNumber);
             Controls.Add(textBox_numberTelephone);
             Controls.Add(label4);
-            Controls.Add(textBox_work);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(textBox_fio);
             Controls.Add(label1);
             Controls.Add(textBox_password1);
-            Controls.Add(textBox_login1);
             Controls.Add(button_reg1);
             Controls.Add(button_login1);
             Name = "Form1";
@@ -353,7 +357,6 @@
 
         private Button button_login1;
         private Button button_reg1;
-        private TextBox textBox_login1;
         private TextBox textBox_password1;
         private Button button_save;
         private Label label5;
@@ -363,7 +366,6 @@
         private TextBox textBox_homeNumber;
         private TextBox textBox_numberTelephone;
         private Label label4;
-        private TextBox textBox_work;
         private Label label3;
         private Label label2;
         private TextBox textBox_fio;
@@ -375,5 +377,7 @@
         private Label label_password;
         private Button button_login2;
         private Button button_back;
+        private ComboBox comboBox_login1;
+        private ComboBox comboBox_work;
     }
 }
