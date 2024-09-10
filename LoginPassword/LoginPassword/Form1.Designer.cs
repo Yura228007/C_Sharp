@@ -82,6 +82,7 @@
             textBox_password1.Font = new Font("Segoe UI", 14F);
             textBox_password1.Location = new Point(127, 274);
             textBox_password1.Name = "textBox_password1";
+            textBox_password1.PasswordChar = '*';
             textBox_password1.Size = new Size(284, 32);
             textBox_password1.TabIndex = 2;
             textBox_password1.Visible = false;
