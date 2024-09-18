@@ -1,6 +1,6 @@
 ﻿namespace Transports_1
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             panel_addTransport = new Panel();
+            comboBox_purposeCar = new ComboBox();
             comboBox_fuelSubtype = new ComboBox();
             comboBox_fuelType = new ComboBox();
             button_addCar = new Button();
             textBox_averageSpeed = new TextBox();
             textBox_fuelConsumption = new TextBox();
-            textBox_purposeCar = new TextBox();
             textBox_nameCar = new TextBox();
             label5 = new Label();
             label6 = new Label();
@@ -44,17 +44,19 @@
             label1 = new Label();
             button_add = new Button();
             listBox_transports = new ListBox();
+            label7 = new Label();
+            button_calculation = new Button();
             panel_addTransport.SuspendLayout();
             SuspendLayout();
             // 
             // panel_addTransport
             // 
+            panel_addTransport.Controls.Add(comboBox_purposeCar);
             panel_addTransport.Controls.Add(comboBox_fuelSubtype);
             panel_addTransport.Controls.Add(comboBox_fuelType);
             panel_addTransport.Controls.Add(button_addCar);
             panel_addTransport.Controls.Add(textBox_averageSpeed);
             panel_addTransport.Controls.Add(textBox_fuelConsumption);
-            panel_addTransport.Controls.Add(textBox_purposeCar);
             panel_addTransport.Controls.Add(textBox_nameCar);
             panel_addTransport.Controls.Add(label5);
             panel_addTransport.Controls.Add(label6);
@@ -68,6 +70,14 @@
             panel_addTransport.TabIndex = 0;
             panel_addTransport.Visible = false;
             // 
+            // comboBox_purposeCar
+            // 
+            comboBox_purposeCar.FormattingEnabled = true;
+            comboBox_purposeCar.Location = new Point(179, 54);
+            comboBox_purposeCar.Name = "comboBox_purposeCar";
+            comboBox_purposeCar.Size = new Size(195, 23);
+            comboBox_purposeCar.TabIndex = 4;
+            // 
             // comboBox_fuelSubtype
             // 
             comboBox_fuelSubtype.FormattingEnabled = true;
@@ -79,7 +89,7 @@
             // comboBox_fuelType
             // 
             comboBox_fuelType.FormattingEnabled = true;
-            comboBox_fuelType.Location = new Point(179, 82);
+            comboBox_fuelType.Location = new Point(179, 79);
             comboBox_fuelType.Name = "comboBox_fuelType";
             comboBox_fuelType.Size = new Size(195, 23);
             comboBox_fuelType.TabIndex = 3;
@@ -109,13 +119,6 @@
             textBox_fuelConsumption.Name = "textBox_fuelConsumption";
             textBox_fuelConsumption.Size = new Size(195, 23);
             textBox_fuelConsumption.TabIndex = 1;
-            // 
-            // textBox_purposeCar
-            // 
-            textBox_purposeCar.Location = new Point(179, 54);
-            textBox_purposeCar.Name = "textBox_purposeCar";
-            textBox_purposeCar.Size = new Size(195, 23);
-            textBox_purposeCar.TabIndex = 1;
             // 
             // textBox_nameCar
             // 
@@ -203,20 +206,43 @@
             listBox_transports.Name = "listBox_transports";
             listBox_transports.Size = new Size(393, 259);
             listBox_transports.TabIndex = 2;
+            listBox_transports.SelectedIndexChanged += listBox_transports_SelectedIndexChanged;
             // 
-            // Form1
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(312, 475);
+            label7.Name = "label7";
+            label7.Size = new Size(38, 15);
+            label7.TabIndex = 3;
+            label7.Text = "label7";
+            // 
+            // button_calculation
+            // 
+            button_calculation.Location = new Point(196, 371);
+            button_calculation.Name = "button_calculation";
+            button_calculation.Size = new Size(117, 41);
+            button_calculation.TabIndex = 4;
+            button_calculation.Text = "Рассчитать расходы";
+            button_calculation.UseVisualStyleBackColor = true;
+            button_calculation.Click += button_calculation_Click;
+            // 
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1151, 742);
+            Controls.Add(button_calculation);
+            Controls.Add(label7);
             Controls.Add(listBox_transports);
             Controls.Add(button_add);
             Controls.Add(panel_addTransport);
-            Name = "Form1";
+            Name = "MainForm";
             Text = "Form1";
             panel_addTransport.ResumeLayout(false);
             panel_addTransport.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -228,7 +254,6 @@
         private Label label2;
         private Label label5;
         private TextBox textBox_fuelConsumption;
-        private TextBox textBox_purposeCar;
         private TextBox textBox_nameCar;
         private TextBox textBox_averageSpeed;
         private Label label6;
@@ -237,5 +262,8 @@
         private ComboBox comboBox_fuelType;
         private Button button_add;
         private ListBox listBox_transports;
+        private ComboBox comboBox_purposeCar;
+        private Label label7;
+        private Button button_calculation;
     }
 }
