@@ -12,21 +12,23 @@ namespace Transports_1
 {
     public partial class CalculatingExpenses : Form
     {
-        Dictionary <string, double> resoursec = new Dictionary <string, double>();
+        Dictionary<string, double> resoursec = new Dictionary<string, double>();
+        bool flag = true;
+
         public CalculatingExpenses()
         {
             InitializeComponent();
         }
         private void CalculatingExpenses_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void buttonCalc_Click(object sender, EventArgs e)
         {
             if (this.Owner is MainForm mainform)
             {
-                
+
                 if (textBox_mileagePassenger.Text != "" &&
                     textBox_mileageTruck.Text != "" &&
                     textBox_mileageBus.Text != "")
@@ -34,34 +36,55 @@ namespace Transports_1
                     bool isNumberPassenger = Double.TryParse(textBox_mileagePassenger.Text, out double tempMileagePassenger);
                     bool isNumberTruck = Double.TryParse(textBox_mileageTruck.Text, out double tempMileageTruck);
                     bool isNumberBus = Double.TryParse(textBox_mileageBus.Text, out double tempMileageBus);
-                    if (isNumberPassenger&&isNumberTruck&&isNumberBus)
+                    
+                    int multiplier = DeterminingMultiplier();
+                    double procent = radioButton_summer.Checked ? 0.1 : 0.25;
+
+                    if (isNumberPassenger && isNumberTruck && isNumberBus)
                     {
                         foreach (var vehicle in mainform._vehicles)
                         {
-                            string fuel = Determining_FuelType(vehicle.GetFuelType());
+                            string fuel = Determining_FuelTypeString(vehicle.GetFuelType());
                             if (!resoursec.ContainsKey(fuel))
                             {
                                 if (vehicle is PassengerCar)
-                                    resoursec.Add(fuel, tempMileagePassenger * vehicle.FuelConsumption / 100);
+                                    resoursec.Add(fuel, multiplier * tempMileagePassenger * vehicle.FuelConsumption / 100 + procent * multiplier * tempMileagePassenger * vehicle.FuelConsumption / 100);
                                 else if (vehicle is Truck)
-                                    resoursec.Add(fuel, tempMileageTruck * vehicle.FuelConsumption / 100);
+                                    resoursec.Add(fuel, multiplier * tempMileageTruck * vehicle.FuelConsumption / 100 + procent * multiplier * tempMileageTruck * vehicle.FuelConsumption / 100);
                                 else if (vehicle is Bus)
-                                    resoursec.Add(fuel, tempMileageBus * vehicle.FuelConsumption / 100);
+                                    resoursec.Add(fuel, multiplier * tempMileageBus * vehicle.FuelConsumption / 100 + procent * multiplier * tempMileageBus * vehicle.FuelConsumption / 100);
                             }
                             else
                             {
                                 if (vehicle is PassengerCar)
-                                    resoursec[fuel] += Double.Parse(textBox_mileagePassenger.Text) * vehicle.FuelConsumption / 100;
+                                    resoursec[fuel] += multiplier * Double.Parse(textBox_mileagePassenger.Text) * vehicle.FuelConsumption / 100 + procent * multiplier * Double.Parse(textBox_mileagePassenger.Text) * vehicle.FuelConsumption / 100;
                                 else if (vehicle is Truck)
-                                    resoursec[fuel] += Double.Parse(textBox_mileageTruck.Text) * vehicle.FuelConsumption / 100;
+                                    resoursec[fuel] += multiplier * Double.Parse(textBox_mileageTruck.Text) * vehicle.FuelConsumption / 100 + procent * multiplier * Double.Parse(textBox_mileageTruck.Text) * vehicle.FuelConsumption / 100;
                                 else if (vehicle is Bus)
-                                    resoursec[fuel] += Double.Parse(textBox_mileageBus.Text) * vehicle.FuelConsumption / 100;
+                                    resoursec[fuel] += multiplier * Double.Parse(textBox_mileageBus.Text) * vehicle.FuelConsumption / 100 + procent * multiplier * Double.Parse(textBox_mileageBus.Text) * vehicle.FuelConsumption / 100;
                             }
                         }
+                        //
+                        foreach (var key in resoursec.Keys)
+                        {
+                            if (this.Owner is MainForm mainForm)
+                            {
+                                if (resoursec[key] > mainForm.fuelVolume[key])
+                                {
+                                    flag = false;
+                                    break;
+                                }
+                            }
+                        }
+                        //
                         string result = "";
                         foreach (var res in resoursec)
                         {
                             result += $"{res.Key.ToString()}: {res.Value.ToString()}\n";
+                        }
+                        if (!flag)
+                        {
+                            MessageBox.Show("Не хватает топлива! (но вот сколько надо)", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         if (resoursec.Count > 0)
                         {
@@ -75,7 +98,7 @@ namespace Transports_1
                 else MessageBox.Show("Заполните все строки!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private string Determining_FuelType(FuelType fuel)
+        private string Determining_FuelTypeString(FuelType fuel)
         {
             if (fuel == FuelType.dieselSummer)
             {
@@ -93,10 +116,75 @@ namespace Transports_1
             {
                 return "Газ метан";
             }
-            else 
+            else
             {
                 return fuel.ToString();
             }
         }
+
+
+
+        private void radioButton_day_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton_day.Checked)
+            {
+                radioButton_week.Checked = false;
+                radioButton_month.Checked = false;
+                radioButton_season.Checked = false;
+            }
+        }
+
+        private void radioButton_week_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton_week.Checked)
+            {
+                radioButton_day.Checked = false;
+                radioButton_month.Checked = false;
+                radioButton_season.Checked = false;
+            }
+        }
+
+        private void radioButton_month_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton_month.Checked)
+            {
+                radioButton_day.Checked = false;
+                radioButton_week.Checked = false;
+                radioButton_season.Checked = false;
+            }
+        }
+
+        private void radioButton_season_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton_season.Checked)
+            {
+                radioButton_day.Checked = false;
+                radioButton_week.Checked = false;
+                radioButton_month.Checked = false;
+            }
+        }
+
+        private int DeterminingMultiplier()
+        {
+            if (radioButton_day.Checked)
+                return 1;
+            else if (radioButton_week.Checked)
+                return 7;
+            else if (radioButton_month.Checked)
+                return 30;
+            else
+                return 90;
+        }
+
+        private void radioButton_summer_CheckedChanged(object sender, EventArgs e)
+        {
+            radioButton_winter.Checked = !radioButton_summer.Checked;
+        }
+
+        private void radioButton_winter_CheckedChanged(object sender, EventArgs e)
+        {
+            radioButton_summer.Checked = !radioButton_winter.Checked;
+        }
+
     }
 }

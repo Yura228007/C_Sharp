@@ -44,9 +44,13 @@
             label1 = new Label();
             button_add = new Button();
             listBox_transports = new ListBox();
-            label7 = new Label();
             button_calculation = new Button();
+            table_list_dishes = new TableLayoutPanel();
+            panel_fuelVolume = new Panel();
+            tableLayoutPanel_fuelVolume = new TableLayoutPanel();
+            button1 = new Button();
             panel_addTransport.SuspendLayout();
+            panel_fuelVolume.SuspendLayout();
             SuspendLayout();
             // 
             // panel_addTransport
@@ -208,15 +212,6 @@
             listBox_transports.TabIndex = 2;
             listBox_transports.SelectedIndexChanged += listBox_transports_SelectedIndexChanged;
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(312, 475);
-            label7.Name = "label7";
-            label7.Size = new Size(38, 15);
-            label7.TabIndex = 3;
-            label7.Text = "label7";
-            // 
             // button_calculation
             // 
             button_calculation.Location = new Point(196, 371);
@@ -227,13 +222,68 @@
             button_calculation.UseVisualStyleBackColor = true;
             button_calculation.Click += button_calculation_Click;
             // 
+            // table_list_dishes
+            // 
+            table_list_dishes.AutoSize = true;
+            table_list_dishes.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            table_list_dishes.ColumnCount = 3;
+            table_list_dishes.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
+            table_list_dishes.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70F));
+            table_list_dishes.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            table_list_dishes.Dock = DockStyle.Top;
+            table_list_dishes.Location = new Point(0, 0);
+            table_list_dishes.Name = "table_list_dishes";
+            table_list_dishes.RowCount = 2;
+            table_list_dishes.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            table_list_dishes.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            table_list_dishes.Size = new Size(200, 100);
+            table_list_dishes.TabIndex = 0;
+            // 
+            // panel_fuelVolume
+            // 
+            panel_fuelVolume.AutoScroll = true;
+            panel_fuelVolume.Controls.Add(tableLayoutPanel_fuelVolume);
+            panel_fuelVolume.Font = new Font("Segoe UI", 12F);
+            panel_fuelVolume.Location = new Point(547, 380);
+            panel_fuelVolume.Name = "panel_fuelVolume";
+            panel_fuelVolume.Size = new Size(250, 297);
+            panel_fuelVolume.TabIndex = 5;
+            // 
+            // tableLayoutPanel_fuelVolume
+            // 
+            tableLayoutPanel_fuelVolume.AutoSize = true;
+            tableLayoutPanel_fuelVolume.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            tableLayoutPanel_fuelVolume.ColumnCount = 2;
+            tableLayoutPanel_fuelVolume.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70F));
+            tableLayoutPanel_fuelVolume.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
+            tableLayoutPanel_fuelVolume.Dock = DockStyle.Top;
+            tableLayoutPanel_fuelVolume.Location = new Point(0, 0);
+            tableLayoutPanel_fuelVolume.Name = "tableLayoutPanel_fuelVolume";
+            tableLayoutPanel_fuelVolume.RowCount = 2;
+            tableLayoutPanel_fuelVolume.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel_fuelVolume.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel_fuelVolume.Size = new Size(250, 3);
+            tableLayoutPanel_fuelVolume.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 14F);
+            button1.Location = new Point(680, 683);
+            button1.Name = "button1";
+            button1.Size = new Size(117, 41);
+            button1.TabIndex = 6;
+            button1.Text = "Сохранить";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1151, 742);
+            Controls.Add(button1);
+            Controls.Add(panel_fuelVolume);
             Controls.Add(button_calculation);
-            Controls.Add(label7);
             Controls.Add(listBox_transports);
             Controls.Add(button_add);
             Controls.Add(panel_addTransport);
@@ -241,8 +291,9 @@
             Text = "Form1";
             panel_addTransport.ResumeLayout(false);
             panel_addTransport.PerformLayout();
+            panel_fuelVolume.ResumeLayout(false);
+            panel_fuelVolume.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -263,7 +314,10 @@
         private Button button_add;
         private ListBox listBox_transports;
         private ComboBox comboBox_purposeCar;
-        private Label label7;
         private Button button_calculation;
+        private TableLayoutPanel table_list_dishes;
+        private Panel panel_fuelVolume;
+        private TableLayoutPanel tableLayoutPanel_fuelVolume;
+        private Button button1;
     }
 }

@@ -3,6 +3,7 @@ namespace Transports_1
     public partial class MainForm : Form
     {
         public List<Transport> _vehicles = new List<Transport>();
+        public Dictionary<string, int> fuelVolume = new Dictionary<string, int>();
         public MainForm()
         {
             InitializeComponent();
@@ -16,9 +17,58 @@ namespace Transports_1
             }
             comboBox_fuelType.Items.AddRange(new string[] { "Дизель", "Газ", "Бензин" });
             comboBox_purposeCar.Items.AddRange(new string[] { "Легковая", "Грузовик", "Автобус" });
+
+            foreach (FuelType i in Enum.GetValues(typeof(FuelType)))
+            {
+                fuelVolume.Add(Determining_FuelTypeString(i), 500);
+            }
+
+            foreach (var line in fuelVolume)
+            {
+                anonLabel_tableLayoutPanel_fuelVolume(line.Key, line.Value);
+            }
         }
 
-        private FuelType Determining_FuelType()
+        private void anonLabel_tableLayoutPanel_fuelVolume(string text, int val)
+        {
+            Label label = new Label();
+            label.Text = text;
+            tableLayoutPanel_fuelVolume.Controls.Add(label);
+
+            NumericUpDown numericUpDown = new NumericUpDown();
+            numericUpDown.Minimum = 0;
+            numericUpDown.Maximum = 1000;
+            numericUpDown.Value = val;
+            numericUpDown.Tag = label;
+            numericUpDown.BorderStyle = BorderStyle.None;
+            tableLayoutPanel_fuelVolume.Controls.Add(numericUpDown);
+        }
+
+        private string Determining_FuelTypeString(FuelType fuel)
+        {
+            if (fuel == FuelType.dieselSummer)
+            {
+                return "Дизель летний";
+            }
+            else if (fuel == FuelType.dieselWinter)
+            {
+                return "Дизель зимний";
+            }
+            else if (fuel == FuelType.hydrogen)
+            {
+                return "Газ водород";
+            }
+            else if (fuel == FuelType.methane)
+            {
+                return "Газ метан";
+            }
+            else
+            {
+                return fuel.ToString();
+            }
+        }
+
+        private FuelType Determining_FuelTypeEnum()
         {
             if (comboBox_fuelSubtype.Text == "Летний")
             {
@@ -72,7 +122,7 @@ namespace Transports_1
                     {
                         if (comboBox_fuelSubtype.SelectedItem != null)
                         {
-                            FuelType fuel = Determining_FuelType();
+                            FuelType fuel = Determining_FuelTypeEnum();
                             if (fuel != 0)
                             {
                                 if (comboBox_purposeCar.Text == "Легковая")
@@ -147,10 +197,7 @@ namespace Transports_1
         {
             foreach (var i in _vehicles)
             {
-                if (i.Name == listBox_transports.SelectedItem.ToString())
-                {
-                    label7.Text = i.Id.ToString();
-                }
+
             }
         }
 
@@ -159,6 +206,30 @@ namespace Transports_1
             CalculatingExpenses calculatingExpenses = new CalculatingExpenses();
             calculatingExpenses.Owner = this;
             calculatingExpenses.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fuelVolume.Clear();
+            foreach (Control control in tableLayoutPanel_fuelVolume.Controls)
+            {
+                if (control is Label label)
+                {
+                    string line = label.Text;
+
+                    int index = tableLayoutPanel_fuelVolume.Controls.IndexOf(control);
+
+                    if (index + 1 < tableLayoutPanel_fuelVolume.Controls.Count)
+                    {
+                        Control nextControl = tableLayoutPanel_fuelVolume.Controls[index + 1];
+                        if (nextControl is NumericUpDown numericUpDown)
+                        {
+                            int value = (int)numericUpDown.Value;
+                            fuelVolume.Add(line, value);
+                        }
+                    }
+                }
+            }
         }
     }
 }

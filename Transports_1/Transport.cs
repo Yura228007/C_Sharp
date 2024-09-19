@@ -27,8 +27,8 @@ namespace Transports_1
         private static int _nextId = 1;
         public int Id { get; private set; }
         public string Name { get; set; }
-        public int FuelConsumption { get; set; } // в ед. топлива/100 км
-        public int AverageSpeed { get; set; } // в км/ч
+        public int FuelConsumption { get; set; } 
+        public int AverageSpeed { get; set; } 
 
         protected Transport(string name, int fuelConsumption, int averageSpeed)
         {
