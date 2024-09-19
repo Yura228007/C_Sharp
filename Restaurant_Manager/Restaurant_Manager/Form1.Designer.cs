@@ -38,7 +38,6 @@
             table_info_aboutDish = new TableLayoutPanel();
             button_add_productFor_dish = new Button();
             panel_list_dishes = new Panel();
-            table_list_dishes = new TableLayoutPanel();
             button_save_dish = new Button();
             button_delete_dish = new Button();
             label1 = new Label();
@@ -48,6 +47,7 @@
             panel_product_list = new Panel();
             table_prodList = new TableLayoutPanel();
             label_productsList = new Label();
+            table_list_dishes = new TableLayoutPanel();
             panel_main.SuspendLayout();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)newDish_cost).BeginInit();
@@ -177,23 +177,6 @@
             panel_list_dishes.Size = new Size(310, 256);
             panel_list_dishes.TabIndex = 3;
             // 
-            // table_list_dishes
-            // 
-            table_list_dishes.AutoSize = true;
-            table_list_dishes.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            table_list_dishes.ColumnCount = 3;
-            table_list_dishes.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
-            table_list_dishes.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70F));
-            table_list_dishes.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
-            table_list_dishes.Dock = DockStyle.Top;
-            table_list_dishes.Location = new Point(0, 0);
-            table_list_dishes.Name = "table_list_dishes";
-            table_list_dishes.RowCount = 2;
-            table_list_dishes.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            table_list_dishes.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            table_list_dishes.Size = new Size(310, 3);
-            table_list_dishes.TabIndex = 0;
-            // 
             // button_save_dish
             // 
             button_save_dish.Font = new Font("Segoe UI", 12F);
@@ -295,6 +278,23 @@
             label_productsList.TabIndex = 1;
             label_productsList.Text = "Список продуктов";
             // 
+            // table_list_dishes
+            // 
+            table_list_dishes.AutoSize = true;
+            table_list_dishes.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            table_list_dishes.ColumnCount = 3;
+            table_list_dishes.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
+            table_list_dishes.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70F));
+            table_list_dishes.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
+            table_list_dishes.Dock = DockStyle.Top;
+            table_list_dishes.Location = new Point(0, 0);
+            table_list_dishes.Name = "table_list_dishes";
+            table_list_dishes.RowCount = 2;
+            table_list_dishes.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            table_list_dishes.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            table_list_dishes.Size = new Size(310, 3);
+            table_list_dishes.TabIndex = 0;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -335,8 +335,8 @@
         private Button button_add_productFor_dish;
         private Button button_save_dish;
         private Panel panel_list_dishes;
-        private TableLayoutPanel table_list_dishes;
         private GroupBox groupBox1;
         private NumericUpDown newDish_cost;
+        private TableLayoutPanel table_list_dishes;
     }
 }

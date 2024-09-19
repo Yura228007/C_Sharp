@@ -1,7 +1,7 @@
 1234
 Младший Работник Степанов
 20
-LOWWORKER
+MIDLEWORKER
 666666
 False
 
