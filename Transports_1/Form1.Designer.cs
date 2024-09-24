@@ -246,7 +246,7 @@
             panel_fuelVolume.Font = new Font("Segoe UI", 12F);
             panel_fuelVolume.Location = new Point(547, 380);
             panel_fuelVolume.Name = "panel_fuelVolume";
-            panel_fuelVolume.Size = new Size(250, 297);
+            panel_fuelVolume.Size = new Size(363, 297);
             panel_fuelVolume.TabIndex = 5;
             // 
             // tableLayoutPanel_fuelVolume
@@ -262,7 +262,7 @@
             tableLayoutPanel_fuelVolume.RowCount = 2;
             tableLayoutPanel_fuelVolume.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel_fuelVolume.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel_fuelVolume.Size = new Size(250, 3);
+            tableLayoutPanel_fuelVolume.Size = new Size(363, 3);
             tableLayoutPanel_fuelVolume.TabIndex = 0;
             // 
             // button1

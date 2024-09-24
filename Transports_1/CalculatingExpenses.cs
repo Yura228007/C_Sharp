@@ -13,6 +13,7 @@ namespace Transports_1
     public partial class CalculatingExpenses : Form
     {
         Dictionary<string, double> resoursec = new Dictionary<string, double>();
+        Dictionary<string, double> resoursecShortage = new Dictionary<string, double>();
         bool flag = true;
 
         public CalculatingExpenses()
@@ -38,7 +39,7 @@ namespace Transports_1
                     bool isNumberBus = Double.TryParse(textBox_mileageBus.Text, out double tempMileageBus);
                     
                     int multiplier = DeterminingMultiplier();
-                    double procent = radioButton_summer.Checked ? 0.1 : 0.25;
+                    int fuelForWarming = radioButton_summer.Checked ? 2 : 5;
 
                     if (isNumberPassenger && isNumberTruck && isNumberBus)
                     {
@@ -48,21 +49,21 @@ namespace Transports_1
                             if (!resoursec.ContainsKey(fuel))
                             {
                                 if (vehicle is PassengerCar)
-                                    resoursec.Add(fuel, multiplier * tempMileagePassenger * vehicle.FuelConsumption / 100 + procent * multiplier * tempMileagePassenger * vehicle.FuelConsumption / 100);
+                                    resoursec.Add(fuel, multiplier * tempMileagePassenger * vehicle.FuelConsumption / 100 + fuelForWarming);
                                 else if (vehicle is Truck)
-                                    resoursec.Add(fuel, multiplier * tempMileageTruck * vehicle.FuelConsumption / 100 + procent * multiplier * tempMileageTruck * vehicle.FuelConsumption / 100);
+                                    resoursec.Add(fuel, multiplier * tempMileageTruck * vehicle.FuelConsumption / 100 + fuelForWarming);
                                 else if (vehicle is Bus)
-                                    resoursec.Add(fuel, multiplier * tempMileageBus * vehicle.FuelConsumption / 100 + procent * multiplier * tempMileageBus * vehicle.FuelConsumption / 100);
+                                    resoursec.Add(fuel, multiplier * tempMileageBus * vehicle.FuelConsumption / 100 + fuelForWarming);
                             }
                             else
                             {
                                 if (vehicle is PassengerCar)
-                                    resoursec[fuel] += multiplier * Double.Parse(textBox_mileagePassenger.Text) * vehicle.FuelConsumption / 100 + procent * multiplier * Double.Parse(textBox_mileagePassenger.Text) * vehicle.FuelConsumption / 100;
+                                    resoursec[fuel] += multiplier * Double.Parse(textBox_mileagePassenger.Text) * vehicle.FuelConsumption / 100 + fuelForWarming;
                                 else if (vehicle is Truck)
-                                    resoursec[fuel] += multiplier * Double.Parse(textBox_mileageTruck.Text) * vehicle.FuelConsumption / 100 + procent * multiplier * Double.Parse(textBox_mileageTruck.Text) * vehicle.FuelConsumption / 100;
+                                    resoursec[fuel] += multiplier * Double.Parse(textBox_mileageTruck.Text) * vehicle.FuelConsumption / 100 + fuelForWarming;
                                 else if (vehicle is Bus)
-                                    resoursec[fuel] += multiplier * Double.Parse(textBox_mileageBus.Text) * vehicle.FuelConsumption / 100 + procent * multiplier * Double.Parse(textBox_mileageBus.Text) * vehicle.FuelConsumption / 100;
-                            }
+                                    resoursec[fuel] += multiplier * Double.Parse(textBox_mileageBus.Text) * vehicle.FuelConsumption / 100 + fuelForWarming;
+                                }
                         }
                         //
                         foreach (var key in resoursec.Keys)
@@ -71,23 +72,26 @@ namespace Transports_1
                             {
                                 if (resoursec[key] > mainForm.fuelVolume[key])
                                 {
-                                    flag = false;
-                                    break;
+                                    resoursecShortage.Add(key, resoursec[key] - mainForm.fuelVolume[key]);
                                 }
                             }
                         }
                         //
                         string result = "";
-                        foreach (var res in resoursec)
+                        if (resoursecShortage.Count > 0)
                         {
-                            result += $"{res.Key.ToString()}: {res.Value.ToString()}\n";
+                            foreach (var res in resoursecShortage)
+                            {
+                                result += $"{res.Key.ToString()}: {res.Value.ToString()}\n";
+                            }
+                            MessageBox.Show($"Не хватает топлива:\n {result}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                        if (!flag)
+                        else if (resoursec.Count > 0)
                         {
-                            MessageBox.Show("Не хватает топлива! (но вот сколько надо)", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                        if (resoursec.Count > 0)
-                        {
+                            foreach (var res in resoursec)
+                            {
+                                result += $"{res.Key.ToString()}: {res.Value.ToString()}\n";
+                            }
                             MessageBox.Show(result);
                             resoursec.Clear();
                         }

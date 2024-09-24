@@ -248,9 +248,9 @@
             label1.Font = new Font("Segoe UI", 16F);
             label1.Location = new Point(12, 12);
             label1.Name = "label1";
-            label1.Size = new Size(140, 30);
+            label1.Size = new Size(212, 30);
             label1.TabIndex = 0;
-            label1.Text = "Километраж";
+            label1.Text = "Километраж в день";
             // 
             // CalculatingExpenses
             // 
