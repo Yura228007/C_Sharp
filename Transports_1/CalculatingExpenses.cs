@@ -63,7 +63,7 @@ namespace Transports_1
                                     resoursec[fuel] += multiplier * Double.Parse(textBox_mileageTruck.Text) * vehicle.FuelConsumption / 100 + fuelForWarming;
                                 else if (vehicle is Bus)
                                     resoursec[fuel] += multiplier * Double.Parse(textBox_mileageBus.Text) * vehicle.FuelConsumption / 100 + fuelForWarming;
-                                }
+                            }
                         }
                         //
                         foreach (var key in resoursec.Keys)

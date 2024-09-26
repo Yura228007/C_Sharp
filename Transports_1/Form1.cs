@@ -7,10 +7,15 @@ namespace Transports_1
         public MainForm()
         {
             InitializeComponent();
-            _vehicles.Add(new PassengerCar("PassengerCar1", 15, 90, FuelType.dieselSummer));
-            _vehicles.Add(new PassengerCar("PassengerCar2", 12, 80, FuelType.¿»98));
-            _vehicles.Add(new Truck("Truck1", 30, 60, FuelType.methane));
-            _vehicles.Add(new Bus("Bus1", 20, 75, FuelType.¿»98));
+            _vehicles.Add(new PassengerCar("PassengerCar1", 15, 90, FuelType.hydrogen));
+            _vehicles.Add(new PassengerCar("PassengerCar2", 15, 90, FuelType.hydrogen));
+            _vehicles.Add(new PassengerCar("PassengerCar3", 15, 90, FuelType.hydrogen));
+            _vehicles.Add(new Truck("Truck1", 30, 60, FuelType.¿»92));
+            _vehicles.Add(new Truck("Truck2", 30, 60, FuelType.¿»92));
+            _vehicles.Add(new Truck("Truck3", 30, 60, FuelType.¿»92));
+            _vehicles.Add(new Bus("Bus1", 20, 75, FuelType.dieselSummer));
+            _vehicles.Add(new Bus("Bus2", 20, 75, FuelType.dieselSummer));
+            _vehicles.Add(new Bus("Bus3", 20, 75, FuelType.dieselSummer));
             foreach (var i in _vehicles)
             {
                 listBox_transports.Items.Add(i.Name);

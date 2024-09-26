@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\",
+  "WorkspaceRootPath": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\transport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\transport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|solutionrelative:transport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|c:\\c_projects\\c#\\git\\c_sharp\\transports_1\\calculatingexpenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|solutionrelative:calculatingexpenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\calculatingexpenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|c:\\users\\student_07\\documents\\git_yura\\c_sharp\\transports_1\\calculatingexpenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|solutionrelative:calculatingexpenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\calculatingexpenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|solutionrelative:calculatingexpenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\calculatingexpenses.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\calculatingexpenses.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D32B365-353A-4DE8-B01E-4DD5BA913179}|Transports_1.csproj|solutionrelative:calculatingexpenses.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,15 +38,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "CalculatingExpenses.Designer.cs",
-              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\CalculatingExpenses.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\CalculatingExpenses.Designer.cs",
               "RelativeDocumentMoniker": "CalculatingExpenses.Designer.cs",
-              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\CalculatingExpenses.Designer.cs",
+              "ToolTip": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\CalculatingExpenses.Designer.cs",
               "RelativeToolTip": "CalculatingExpenses.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -54,35 +58,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CalculatingExpenses.cs",
-              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\CalculatingExpenses.cs",
+              "DocumentMoniker": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\CalculatingExpenses.cs",
               "RelativeDocumentMoniker": "CalculatingExpenses.cs",
-              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\CalculatingExpenses.cs",
+              "ToolTip": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\CalculatingExpenses.cs",
               "RelativeToolTip": "CalculatingExpenses.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAABAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-18T18:10:48.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "CalculatingExpenses.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\CalculatingExpenses.cs",
+              "DocumentMoniker": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\CalculatingExpenses.cs",
               "RelativeDocumentMoniker": "CalculatingExpenses.cs",
-              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\CalculatingExpenses.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\CalculatingExpenses.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "CalculatingExpenses.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-18T17:55:37.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -91,37 +95,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\Form1.cs",
+              "ToolTip": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowDYAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T14:17:15.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Transport.cs",
-              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\Transport.cs",
+              "DocumentMoniker": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\Transport.cs",
               "RelativeDocumentMoniker": "Transport.cs",
-              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\Transport.cs",
+              "ToolTip": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\Transport.cs",
               "RelativeToolTip": "Transport.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T13:23:21.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\Transports_1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\Transports_1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T13:12:03.765Z",
