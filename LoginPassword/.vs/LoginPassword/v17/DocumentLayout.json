@@ -9,6 +9,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\LoginPassword\\loginpassword\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|solutionrelative:loginpassword\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|c:\\users\\student_07\\documents\\git_yura\\c_sharp\\loginpassword\\loginpassword\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|solutionrelative:loginpassword\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|c:\\users\\student_07\\documents\\git_yura\\c_sharp\\loginpassword\\loginpassword\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|solutionrelative:loginpassword\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +26,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminForm.cs",
+              "DocumentMoniker": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\LoginPassword\\LoginPassword\\AdminForm.cs",
+              "RelativeDocumentMoniker": "LoginPassword\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\LoginPassword\\LoginPassword\\AdminForm.cs",
+              "RelativeToolTip": "LoginPassword\\AdminForm.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAApwBoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:42:16.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\LoginPassword\\LoginPassword\\AdminForm.cs",
+              "RelativeDocumentMoniker": "LoginPassword\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\LoginPassword\\LoginPassword\\AdminForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "LoginPassword\\AdminForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:40:13.929Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
@@ -32,7 +65,7 @@
               "RelativeDocumentMoniker": "LoginPassword\\Form1.cs",
               "ToolTip": "C:\\Users\\Student_07\\Documents\\Git_Yura\\C_Sharp\\LoginPassword\\LoginPassword\\Form1.cs",
               "RelativeToolTip": "LoginPassword\\Form1.cs",
-              "ViewState": "AQIAAJUAAAAAAAAAAAAswLAAAABCAAAA",
+              "ViewState": "AQIAANIAAAAAAAAAAADgv+cAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-07T08:57:56.906Z",
               "EditorCaption": ""

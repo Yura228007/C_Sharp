@@ -5,4 +5,4 @@ MIDLEWORKER
 666666
 False
 
-man
+women

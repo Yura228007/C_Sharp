@@ -52,7 +52,10 @@
             button_back = new Button();
             comboBox_login1 = new ComboBox();
             comboBox_work = new ComboBox();
+            panel_userData = new Panel();
+            button_back2 = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown_old).BeginInit();
+            panel_userData.SuspendLayout();
             SuspendLayout();
             // 
             // button_login1
@@ -90,186 +93,172 @@
             // button_save
             // 
             button_save.Font = new Font("Segoe UI", 14F);
-            button_save.Location = new Point(638, 368);
+            button_save.Location = new Point(189, 323);
             button_save.Name = "button_save";
             button_save.Size = new Size(229, 44);
             button_save.TabIndex = 28;
             button_save.Text = "Сохранить";
             button_save.UseVisualStyleBackColor = true;
-            button_save.Visible = false;
             button_save.Click += button_save_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 14F);
-            label5.Location = new Point(580, 335);
+            label5.Location = new Point(131, 290);
             label5.Name = "label5";
             label5.Size = new Size(47, 25);
             label5.TabIndex = 27;
             label5.Text = "Пол";
-            label5.Visible = false;
             // 
             // radioButton_women
             // 
             radioButton_women.AutoSize = true;
             radioButton_women.Font = new Font("Segoe UI", 14F);
-            radioButton_women.Location = new Point(760, 333);
+            radioButton_women.Location = new Point(311, 288);
             radioButton_women.Name = "radioButton_women";
             radioButton_women.Size = new Size(107, 29);
             radioButton_women.TabIndex = 26;
             radioButton_women.TabStop = true;
             radioButton_women.Text = "Женский";
             radioButton_women.UseVisualStyleBackColor = true;
-            radioButton_women.Visible = false;
             // 
             // radioButton_man
             // 
             radioButton_man.AutoSize = true;
             radioButton_man.Font = new Font("Segoe UI", 14F);
-            radioButton_man.Location = new Point(644, 333);
+            radioButton_man.Location = new Point(195, 288);
             radioButton_man.Name = "radioButton_man";
             radioButton_man.Size = new Size(110, 29);
             radioButton_man.TabIndex = 25;
             radioButton_man.TabStop = true;
             radioButton_man.Text = "Мужской";
             radioButton_man.UseVisualStyleBackColor = true;
-            radioButton_man.Visible = false;
             radioButton_man.CheckedChanged += radioButton_man_CheckedChanged;
             // 
             // checkBox_homeNumber
             // 
             checkBox_homeNumber.AutoSize = true;
             checkBox_homeNumber.Font = new Font("Segoe UI", 14F);
-            checkBox_homeNumber.Location = new Point(468, 295);
+            checkBox_homeNumber.Location = new Point(19, 250);
             checkBox_homeNumber.Name = "checkBox_homeNumber";
             checkBox_homeNumber.Size = new Size(204, 29);
             checkBox_homeNumber.TabIndex = 24;
             checkBox_homeNumber.Text = "Домашний телефон";
             checkBox_homeNumber.UseVisualStyleBackColor = true;
-            checkBox_homeNumber.Visible = false;
             checkBox_homeNumber.CheckedChanged += checkBox_homeNumber_CheckedChanged;
             // 
             // textBox_homeNumber
             // 
             textBox_homeNumber.Font = new Font("Segoe UI", 14F);
-            textBox_homeNumber.Location = new Point(678, 295);
+            textBox_homeNumber.Location = new Point(229, 250);
             textBox_homeNumber.Name = "textBox_homeNumber";
             textBox_homeNumber.ReadOnly = true;
-            textBox_homeNumber.Size = new Size(189, 32);
+            textBox_homeNumber.Size = new Size(391, 32);
             textBox_homeNumber.TabIndex = 23;
-            textBox_homeNumber.Visible = false;
             // 
             // textBox_numberTelephone
             // 
             textBox_numberTelephone.Font = new Font("Segoe UI", 14F);
-            textBox_numberTelephone.Location = new Point(678, 255);
+            textBox_numberTelephone.Location = new Point(229, 210);
             textBox_numberTelephone.Name = "textBox_numberTelephone";
-            textBox_numberTelephone.Size = new Size(189, 32);
+            textBox_numberTelephone.Size = new Size(391, 32);
             textBox_numberTelephone.TabIndex = 22;
-            textBox_numberTelephone.Visible = false;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14F);
-            label4.Location = new Point(514, 258);
+            label4.Location = new Point(65, 213);
             label4.Name = "label4";
             label4.Size = new Size(158, 25);
             label4.TabIndex = 21;
             label4.Text = "Номер телефона";
-            label4.Visible = false;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 14F);
-            label3.Location = new Point(536, 220);
+            label3.Location = new Point(87, 175);
             label3.Name = "label3";
             label3.Size = new Size(136, 25);
             label3.TabIndex = 19;
             label3.Text = "Место работы";
-            label3.Visible = false;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14F);
-            label2.Location = new Point(592, 181);
+            label2.Location = new Point(143, 136);
             label2.Name = "label2";
             label2.Size = new Size(80, 25);
             label2.TabIndex = 17;
             label2.Text = "Возраст";
-            label2.Visible = false;
             // 
             // textBox_fio
             // 
             textBox_fio.Font = new Font("Segoe UI", 14F);
-            textBox_fio.Location = new Point(678, 141);
+            textBox_fio.Location = new Point(229, 96);
+            textBox_fio.MaxLength = 30;
             textBox_fio.Name = "textBox_fio";
-            textBox_fio.Size = new Size(189, 32);
+            textBox_fio.Size = new Size(391, 32);
             textBox_fio.TabIndex = 16;
-            textBox_fio.Visible = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14F);
-            label1.Location = new Point(618, 141);
+            label1.Location = new Point(169, 96);
             label1.Name = "label1";
             label1.Size = new Size(54, 25);
             label1.TabIndex = 15;
             label1.Text = "ФИО";
-            label1.Visible = false;
             // 
             // numericUpDown_old
             // 
             numericUpDown_old.Font = new Font("Segoe UI", 14F);
-            numericUpDown_old.Location = new Point(678, 179);
+            numericUpDown_old.Location = new Point(229, 134);
             numericUpDown_old.Name = "numericUpDown_old";
-            numericUpDown_old.Size = new Size(189, 32);
+            numericUpDown_old.Size = new Size(391, 32);
             numericUpDown_old.TabIndex = 29;
-            numericUpDown_old.Visible = false;
             // 
             // textBox_login2
             // 
             textBox_login2.Font = new Font("Segoe UI", 14F);
-            textBox_login2.Location = new Point(678, 65);
+            textBox_login2.Location = new Point(229, 20);
+            textBox_login2.MaxLength = 15;
             textBox_login2.Name = "textBox_login2";
-            textBox_login2.Size = new Size(189, 32);
+            textBox_login2.Size = new Size(391, 32);
             textBox_login2.TabIndex = 30;
-            textBox_login2.Visible = false;
             // 
             // textBox_password2
             // 
             textBox_password2.Font = new Font("Segoe UI", 14F);
-            textBox_password2.Location = new Point(678, 103);
+            textBox_password2.Location = new Point(229, 58);
+            textBox_password2.MaxLength = 20;
             textBox_password2.Name = "textBox_password2";
-            textBox_password2.Size = new Size(189, 32);
+            textBox_password2.Size = new Size(391, 32);
             textBox_password2.TabIndex = 31;
-            textBox_password2.Visible = false;
             // 
             // label_login
             // 
             label_login.AutoSize = true;
             label_login.Font = new Font("Segoe UI", 14F);
-            label_login.Location = new Point(607, 68);
+            label_login.Location = new Point(158, 23);
             label_login.Name = "label_login";
             label_login.Size = new Size(65, 25);
             label_login.TabIndex = 32;
             label_login.Text = "Логин";
-            label_login.Visible = false;
             // 
             // label_password
             // 
             label_password.AutoSize = true;
             label_password.Font = new Font("Segoe UI", 14F);
-            label_password.Location = new Point(594, 106);
+            label_password.Location = new Point(145, 61);
             label_password.Name = "label_password";
             label_password.Size = new Size(78, 25);
             label_password.TabIndex = 33;
             label_password.Text = "Пароль";
-            label_password.Visible = false;
             // 
             // button_login2
             // 
@@ -297,7 +286,6 @@
             // 
             // comboBox_login1
             // 
-            comboBox_login1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox_login1.Font = new Font("Segoe UI", 14F);
             comboBox_login1.FormattingEnabled = true;
             comboBox_login1.Location = new Point(127, 236);
@@ -305,44 +293,64 @@
             comboBox_login1.Size = new Size(284, 33);
             comboBox_login1.TabIndex = 36;
             comboBox_login1.Visible = false;
+            comboBox_login1.SelectedIndexChanged += comboBox_login1_SelectedIndexChanged;
             // 
             // comboBox_work
             // 
-            comboBox_work.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox_work.Font = new Font("Segoe UI", 14F);
             comboBox_work.FormattingEnabled = true;
-            comboBox_work.Location = new Point(678, 217);
+            comboBox_work.Location = new Point(229, 172);
             comboBox_work.Name = "comboBox_work";
-            comboBox_work.Size = new Size(189, 33);
+            comboBox_work.Size = new Size(391, 33);
             comboBox_work.TabIndex = 37;
-            comboBox_work.Visible = false;
+            // 
+            // panel_userData
+            // 
+            panel_userData.Controls.Add(button_back2);
+            panel_userData.Controls.Add(checkBox_homeNumber);
+            panel_userData.Controls.Add(comboBox_work);
+            panel_userData.Controls.Add(label1);
+            panel_userData.Controls.Add(textBox_fio);
+            panel_userData.Controls.Add(label2);
+            panel_userData.Controls.Add(label3);
+            panel_userData.Controls.Add(label_password);
+            panel_userData.Controls.Add(label4);
+            panel_userData.Controls.Add(label_login);
+            panel_userData.Controls.Add(textBox_numberTelephone);
+            panel_userData.Controls.Add(textBox_password2);
+            panel_userData.Controls.Add(textBox_homeNumber);
+            panel_userData.Controls.Add(textBox_login2);
+            panel_userData.Controls.Add(radioButton_man);
+            panel_userData.Controls.Add(numericUpDown_old);
+            panel_userData.Controls.Add(radioButton_women);
+            panel_userData.Controls.Add(button_save);
+            panel_userData.Controls.Add(label5);
+            panel_userData.Location = new Point(509, 69);
+            panel_userData.Name = "panel_userData";
+            panel_userData.Size = new Size(667, 387);
+            panel_userData.TabIndex = 38;
+            panel_userData.Visible = false;
+            // 
+            // button_back2
+            // 
+            button_back2.Font = new Font("Segoe UI", 14F);
+            button_back2.Location = new Point(19, 23);
+            button_back2.Name = "button_back2";
+            button_back2.Size = new Size(109, 34);
+            button_back2.TabIndex = 39;
+            button_back2.Text = "назад";
+            button_back2.UseVisualStyleBackColor = true;
+            button_back2.Click += button_back2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(910, 592);
-            Controls.Add(comboBox_work);
+            ClientSize = new Size(1245, 770);
+            Controls.Add(panel_userData);
             Controls.Add(comboBox_login1);
             Controls.Add(button_back);
             Controls.Add(button_login2);
-            Controls.Add(label_password);
-            Controls.Add(label_login);
-            Controls.Add(textBox_password2);
-            Controls.Add(textBox_login2);
-            Controls.Add(numericUpDown_old);
-            Controls.Add(button_save);
-            Controls.Add(label5);
-            Controls.Add(radioButton_women);
-            Controls.Add(radioButton_man);
-            Controls.Add(checkBox_homeNumber);
-            Controls.Add(textBox_homeNumber);
-            Controls.Add(textBox_numberTelephone);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(textBox_fio);
-            Controls.Add(label1);
             Controls.Add(textBox_password1);
             Controls.Add(button_reg1);
             Controls.Add(button_login1);
@@ -350,6 +358,8 @@
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)numericUpDown_old).EndInit();
+            panel_userData.ResumeLayout(false);
+            panel_userData.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -380,5 +390,7 @@
         private Button button_back;
         private ComboBox comboBox_login1;
         private ComboBox comboBox_work;
+        private Panel panel_userData;
+        private Button button_back2;
     }
 }

@@ -2,7 +2,7 @@ namespace LoginPassword
 {
     public partial class Form1 : Form
     {
-
+        bool flag = true;
         public Form1()
         {
             InitializeComponent();
@@ -15,6 +15,7 @@ namespace LoginPassword
             }
             string[] post = new string[] { "HARDWORKER", "MIDLEWORKER", "LOWWORKER" };
             comboBox_work.Items.AddRange(post);
+            this.AcceptButton = button_login2;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,24 +35,7 @@ namespace LoginPassword
 
         private void button_reg1_Click(object sender, EventArgs e)
         {
-            label1.Visible = true;
-            label2.Visible = true;
-            label3.Visible = true;
-            label4.Visible = true;
-            label5.Visible = true;
-            label_login.Visible = true;
-            label_password.Visible = true;
-            checkBox_homeNumber.Visible = true;
-            textBox_fio.Visible = true;
-            textBox_login2.Visible = true;
-            textBox_password2.Visible = true;
-            numericUpDown_old.Visible = true;
-            radioButton_man.Visible = true;
-            radioButton_women.Visible = true;
-            comboBox_work.Visible = true;
-            textBox_numberTelephone.Visible = true;
-            textBox_homeNumber.Visible = true;
-            button_save.Visible = true;
+            panel_userData.Visible = true;
             button_login1.Visible = false;
             button_reg1.Visible = false;
             textBox_login2.ReadOnly = false;
@@ -105,24 +89,7 @@ namespace LoginPassword
                                             comboBox_login1.Items.Add(textBox_login2.Text);
                                         }
 
-                                        label1.Visible = false;
-                                        label2.Visible = false;
-                                        label3.Visible = false;
-                                        label4.Visible = false;
-                                        label5.Visible = false;
-                                        label_login.Visible = false;
-                                        label_password.Visible = false;
-                                        checkBox_homeNumber.Visible = false;
-                                        textBox_fio.Visible = false;
-                                        textBox_login2.Visible = false;
-                                        textBox_password2.Visible = false;
-                                        numericUpDown_old.Visible = false;
-                                        radioButton_man.Visible = false;
-                                        radioButton_women.Visible = false;
-                                        comboBox_work.Visible = false;
-                                        textBox_numberTelephone.Visible = false;
-                                        textBox_homeNumber.Visible = false;
-                                        button_save.Visible = false;
+                                        panel_userData.Visible = false;
                                         button_login1.Visible = true;
                                         button_reg1.Visible = true;
                                         MessageBox.Show("Успешно!", "Окно радости", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -165,67 +132,69 @@ namespace LoginPassword
                             string passwordT = reader.ReadLine();
                             if (textBox_password1.Text == passwordT)
                             {
-                                textBox_login2.Text = "";
-                                textBox_password2.Text = "";
-                                textBox_fio.Text = "";
-                                numericUpDown_old.Value = 0;
-                                comboBox_work.Text = "";
-                                textBox_numberTelephone.Text = "";
-                                checkBox_homeNumber.Checked = false;
-                                textBox_homeNumber.Text = "";
-                                radioButton_man.Checked = false;
-                                radioButton_women.Checked = false;
-                                label1.Visible = true;
-                                label2.Visible = true;
-                                label3.Visible = true;
-                                label4.Visible = true;
-                                label5.Visible = true;
-                                label_login.Visible = true;
-                                label_password.Visible = true;
-                                checkBox_homeNumber.Visible = true;
-                                textBox_fio.Visible = true;
-                                textBox_login2.Visible = true;
-                                textBox_password2.Visible = true;
-                                numericUpDown_old.Visible = true;
-                                radioButton_man.Visible = true;
-                                radioButton_women.Visible = true;
-                                comboBox_work.Visible = true;
-                                textBox_numberTelephone.Visible = true;
-                                textBox_homeNumber.Visible = true;
-                                button_save.Visible = true;
-                                textBox_login2.ReadOnly = true;
-                                comboBox_login1.Visible = false;
-                                textBox_password1.Visible = false;
-                                button_login2.Visible = false;
-                                button_back.Visible = false;
-
-                                textBox_login2.Text = comboBox_login1.Text;
-                                textBox_password2.Text = passwordT;
-                                textBox_fio.Text = reader.ReadLine();
-                                numericUpDown_old.Value = Int32.Parse(reader.ReadLine());
-                                comboBox_work.Text = reader.ReadLine();
-                                textBox_numberTelephone.Text = reader.ReadLine();
-                                if (reader.ReadLine() == "True")
+                                flag = true;
+                                if (comboBox_login1.Text == "admin")
                                 {
-                                    checkBox_homeNumber.Checked = true;
-                                    textBox_homeNumber.Text = reader.ReadLine();
+                                    DialogResult res = MessageBox.Show("Хотите продолжить как админ?", "Вопрос", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                                    if (res == DialogResult.Yes)
+                                    {
+                                        flag = false;
+                                    }
+                                }
+                                if (comboBox_login1.Text != "admin" || flag)
+                                {
+                                    textBox_login2.Text = "";
+                                    textBox_password2.Text = "";
+                                    textBox_fio.Text = "";
+                                    numericUpDown_old.Value = 0;
+                                    comboBox_work.Text = "";
+                                    textBox_numberTelephone.Text = "";
+                                    checkBox_homeNumber.Checked = false;
+                                    textBox_homeNumber.Text = "";
+                                    radioButton_man.Checked = false;
+                                    radioButton_women.Checked = false;
+                                    panel_userData.Visible = true;
+                                    textBox_login2.ReadOnly = true;
+                                    comboBox_login1.Visible = false;
+                                    textBox_password1.Visible = false;
+                                    button_login2.Visible = false;
+                                    button_back.Visible = false;
+
+                                    textBox_login2.Text = comboBox_login1.Text;
+                                    textBox_password2.Text = passwordT;
+                                    textBox_fio.Text = reader.ReadLine();
+                                    numericUpDown_old.Value = Int32.Parse(reader.ReadLine());
+                                    comboBox_work.Text = reader.ReadLine();
+                                    textBox_numberTelephone.Text = reader.ReadLine();
+                                    if (reader.ReadLine() == "True")
+                                    {
+                                        checkBox_homeNumber.Checked = true;
+                                        textBox_homeNumber.Text = reader.ReadLine();
+                                    }
+                                    else
+                                    {
+                                        reader.ReadLine();
+                                    }
+                                    if (reader.ReadLine() == "man")
+                                    {
+                                        radioButton_man.Checked = true;
+                                    }
+                                    else
+                                    {
+                                        radioButton_women.Checked = true;
+                                    }
+                                    comboBox_login1.Text = "";
+                                    textBox_password1.Text = "";
+
+                                    MessageBox.Show("Вы успешно вошли в аккаунт", "Оповещение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    panel_userData.Visible = true;
                                 }
                                 else
                                 {
-                                    reader.ReadLine();
+                                    AdminForm adminForm = new AdminForm();
+                                    adminForm.Owner = this;
+                                    adminForm.ShowDialog();
                                 }
-                                if (reader.ReadLine() == "man")
-                                {
-                                    radioButton_man.Checked = true;
-                                }
-                                else
-                                {
-                                    radioButton_women.Checked = true;
-                                }
-                                comboBox_login1.Text = "";
-                                textBox_password1.Text = "";
-
-                                MessageBox.Show("Вы успешно вошли в аккаунт", "Оповещение", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                             else
                             {
@@ -249,6 +218,18 @@ namespace LoginPassword
             textBox_password1.Visible = false;
             button_login2.Visible = false;
             button_back.Visible = false;
+        }
+
+        private void button_back2_Click(object sender, EventArgs e)
+        {
+            panel_userData.Visible = false;
+            button_login1.Visible = true;
+            button_reg1.Visible = true;
+        }
+
+        private void comboBox_login1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox_password1.Text = "";
         }
     }
 }
