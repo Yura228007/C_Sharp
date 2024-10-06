@@ -23,6 +23,8 @@ namespace LoginPassword
                     comboBox_users.Items.Add(Path.GetFileNameWithoutExtension(file.Name));
                 }
             }
+            string[] post = new string[] { "HARDWORKER", "MIDLEWORKER", "LOWWORKER" };
+            comboBox_work.Items.AddRange(post);
             this.AcceptButton = button_save;
             this.CancelButton = button1; 
         }
