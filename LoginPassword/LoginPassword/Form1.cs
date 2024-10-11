@@ -1,3 +1,6 @@
+п»їusing System.ComponentModel;
+using System.Runtime.CompilerServices;
+
 namespace LoginPassword
 {
     public partial class Form1 : Form
@@ -6,7 +9,7 @@ namespace LoginPassword
         public Form1()
         {
             InitializeComponent();
-            //создание папки data
+            //СЃРѕР·РґР°РЅРёРµ РїР°РїРєРё data
             DirectoryInfo dir = new DirectoryInfo("data");
             if (!dir.Exists) dir.Create();
             foreach (var file in dir.GetFiles())
@@ -16,6 +19,104 @@ namespace LoginPassword
             string[] post = new string[] { "HARDWORKER", "MIDLEWORKER", "LOWWORKER" };
             comboBox_work.Items.AddRange(post);
             this.AcceptButton = button_login2;
+            
+            Binding binding_forLogin = new Binding("Text", textBox_login2, "Text");
+            binding_forLogin.Format += (sender, e) =>
+            {
+                if (textBox_login2.Text.Length == 0)
+                {
+                    check_ok_login.Text = "x";
+                }
+                else
+                {
+                    check_ok_login.Text = "";
+                }
+            };
+            textBox_login2.DataBindings.Add(binding_forLogin);
+
+            Binding binding_forPassword = new Binding("Text", textBox_password2, "Text");
+            binding_forPassword.Format += (sender, e) =>
+            {
+                if (textBox_password2.Text.Length == 0)
+                {
+                    check_ok_password.Text = "x";
+                }
+                else
+                {
+                    check_ok_password.Text = "";
+                }
+            };
+            textBox_password2.DataBindings.Add(binding_forPassword);
+
+            Binding binding_forFio = new Binding("Text", textBox_fio, "Text");
+            binding_forFio.Format += (sender, e) =>
+            {
+                if (textBox_fio.Text.Length == 0)
+                {
+                    check_ok_fio.Text = "x";
+                }
+                else
+                {
+                    check_ok_fio.Text = "";
+                }
+            };
+            textBox_fio.DataBindings.Add(binding_forFio);
+
+            Binding binding_forOld = new Binding("Text", numericUpDown_old, "Text");
+            binding_forOld.Format += (sender, e) =>
+            {
+                if (numericUpDown_old.Value == 0)
+                {
+                    check_ok_old.Text = "x";
+                }
+                else
+                {
+                    check_ok_old.Text = "";
+                }
+            };
+            numericUpDown_old.DataBindings.Add(binding_forOld);
+
+            Binding binding_forWork = new Binding("Text", comboBox_work, "Text");
+            binding_forWork.Format += (sender, e) =>
+            {
+                if (comboBox_work.Text.Length == 0)
+                {
+                    check_ok_work.Text = "x";
+                }
+                else
+                {
+                    check_ok_work.Text = "";
+                }
+            };
+            comboBox_work.DataBindings.Add(binding_forWork);
+
+            Binding binding_forNumberTelephone = new Binding("Text", textBox_numberTelephone, "Text");
+            binding_forNumberTelephone.Format += (sender, e) =>
+            {
+                if (textBox_numberTelephone.Text.Length == 0)
+                {
+                    check_ok_numberTelephone.Text = "x";
+                }
+                else
+                {
+                    check_ok_numberTelephone.Text = "";
+                }
+            };
+            textBox_numberTelephone.DataBindings.Add(binding_forNumberTelephone);
+
+            Binding binding_forHomeNumber = new Binding("Text", textBox_homeNumber, "Text");
+            binding_forHomeNumber.Format += (sender, e) =>
+            {
+                if (textBox_homeNumber.Text.Length == 0 && checkBox_homeNumber.Checked)
+                {
+                    check_ok_homeNumber.Text = "x";
+                }
+                else
+                {
+                    check_ok_homeNumber.Text = "";
+                }
+            };
+            textBox_homeNumber.DataBindings.Add(binding_forHomeNumber);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -92,21 +193,21 @@ namespace LoginPassword
                                         panel_userData.Visible = false;
                                         button_login1.Visible = true;
                                         button_reg1.Visible = true;
-                                        MessageBox.Show("Успешно!", "Окно радости", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        MessageBox.Show("РЈСЃРїРµС€РЅРѕ!", "РћРєРЅРѕ СЂР°РґРѕСЃС‚Рё", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     }
-                                    else MessageBox.Show("Введите домашний номер телефона", "Окно грусти", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    else MessageBox.Show("Р’РІРµРґРёС‚Рµ РґРѕРјР°С€РЅРёР№ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°", "РћРєРЅРѕ РіСЂСѓСЃС‚Рё", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
-                                else MessageBox.Show("Выберите пол", "Окно грусти", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                else MessageBox.Show("Р’С‹Р±РµСЂРёС‚Рµ РїРѕР»", "РћРєРЅРѕ РіСЂСѓСЃС‚Рё", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
-                            else MessageBox.Show("Введите номер телефона", "Окно грусти", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            else MessageBox.Show("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°", "РћРєРЅРѕ РіСЂСѓСЃС‚Рё", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                        else MessageBox.Show("Введите место работы", "Окно грусти", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        else MessageBox.Show("Р’РІРµРґРёС‚Рµ РјРµСЃС‚Рѕ СЂР°Р±РѕС‚С‹", "РћРєРЅРѕ РіСЂСѓСЃС‚Рё", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    else MessageBox.Show("Введите свой возраст", "Окно грусти", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else MessageBox.Show("Р’РІРµРґРёС‚Рµ СЃРІРѕР№ РІРѕР·СЂР°СЃС‚", "РћРєРЅРѕ РіСЂСѓСЃС‚Рё", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else MessageBox.Show("Введите ФИО", "Окно грусти", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Р’РІРµРґРёС‚Рµ Р¤РРћ", "РћРєРЅРѕ РіСЂСѓСЃС‚Рё", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else MessageBox.Show("Введите пароль", "Окно грусти", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else MessageBox.Show("Р’РІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ", "РћРєРЅРѕ РіСЂСѓСЃС‚Рё", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void button_login1_Click(object sender, EventArgs e)
@@ -135,7 +236,7 @@ namespace LoginPassword
                                 flag = true;
                                 if (comboBox_login1.Text == "admin")
                                 {
-                                    DialogResult res = MessageBox.Show("Хотите продолжить как админ?", "Вопрос", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                                    DialogResult res = MessageBox.Show("РҐРѕС‚РёС‚Рµ РїСЂРѕРґРѕР»Р¶РёС‚СЊ РєР°Рє Р°РґРјРёРЅ?", "Р’РѕРїСЂРѕСЃ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                                     if (res == DialogResult.Yes)
                                     {
                                         flag = false;
@@ -186,7 +287,7 @@ namespace LoginPassword
                                     comboBox_login1.Text = "";
                                     textBox_password1.Text = "";
 
-                                    MessageBox.Show("Вы успешно вошли в аккаунт", "Оповещение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    MessageBox.Show("Р’С‹ СѓСЃРїРµС€РЅРѕ РІРѕС€Р»Рё РІ Р°РєРєР°СѓРЅС‚", "РћРїРѕРІРµС‰РµРЅРёРµ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     panel_userData.Visible = true;
                                 }
                                 else
@@ -199,11 +300,11 @@ namespace LoginPassword
                             else
                             {
                                 reader.Close();
-                                MessageBox.Show("Неверный пароль", "Возникла ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("РќРµРІРµСЂРЅС‹Р№ РїР°СЂРѕР»СЊ", "Р’РѕР·РЅРёРєР»Р° РѕС€РёР±РєР°", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                     }
-                    else MessageBox.Show("Такого логина нет, попробуйте зарегестрироваться", "Возникла ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else MessageBox.Show("РўР°РєРѕРіРѕ Р»РѕРіРёРЅР° РЅРµС‚, РїРѕРїСЂРѕР±СѓР№С‚Рµ Р·Р°СЂРµРіРµСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ", "Р’РѕР·РЅРёРєР»Р° РѕС€РёР±РєР°", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -233,3 +334,4 @@ namespace LoginPassword
         }
     }
 }
+

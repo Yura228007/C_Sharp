@@ -67,7 +67,7 @@
             panel_mileage.Controls.Add(label1);
             panel_mileage.Location = new Point(64, 33);
             panel_mileage.Name = "panel_mileage";
-            panel_mileage.Size = new Size(421, 404);
+            panel_mileage.Size = new Size(475, 404);
             panel_mileage.TabIndex = 0;
             // 
             // panel1
@@ -248,9 +248,9 @@
             label1.Font = new Font("Segoe UI", 16F);
             label1.Location = new Point(12, 12);
             label1.Name = "label1";
-            label1.Size = new Size(212, 30);
+            label1.Size = new Size(427, 30);
             label1.TabIndex = 0;
-            label1.Text = "Километраж в день";
+            label1.Text = "Километраж в день для каждой машины";
             // 
             // CalculatingExpenses
             // 

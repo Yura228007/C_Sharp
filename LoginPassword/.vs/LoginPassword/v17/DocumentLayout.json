@@ -1,22 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\",
+  "WorkspaceRootPath": "C:\\Users\\Yurasik\\Desktop\\LoginPassword\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\loginpassword\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|solutionrelative:loginpassword\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\loginpassword\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|solutionrelative:loginpassword\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|c:\\c_projects\\c#\\git\\c_sharp\\loginpassword\\loginpassword\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|C:\\Users\\Yurasik\\Desktop\\LoginPassword\\loginpassword\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|solutionrelative:loginpassword\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\loginpassword\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|C:\\Users\\Yurasik\\Desktop\\LoginPassword\\loginpassword\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|solutionrelative:loginpassword\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|C:\\Users\\Yurasik\\Desktop\\LoginPassword\\loginpassword\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|solutionrelative:loginpassword\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|c:\\users\\yurasik\\desktop\\loginpassword\\loginpassword\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D483695-9747-4B77-8A11-BCAF01539D45}|LoginPassword\\LoginPassword.csproj|solutionrelative:loginpassword\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Student_07\\AppData\\Local\\SourceServer\\d290a244de4fa3d7ddd331475d019d2e8fe58b66f400692283c85e026565d5d9\\src\\System.Windows.Forms\\src\\System\\Windows\\Forms\\Control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,28 +29,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "Control.cs",
+              "DocumentMoniker": "C:\\Users\\Student_07\\AppData\\Local\\SourceServer\\d290a244de4fa3d7ddd331475d019d2e8fe58b66f400692283c85e026565d5d9\\src\\System.Windows.Forms\\src\\System\\Windows\\Forms\\Control.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Student_07\\AppData\\Local\\SourceServer\\d290a244de4fa3d7ddd331475d019d2e8fe58b66f400692283c85e026565d5d9\\src\\System.Windows.Forms\\src\\System\\Windows\\Forms\\Control.cs",
+              "ToolTip": "C:\\Users\\Student_07\\AppData\\Local\\SourceServer\\d290a244de4fa3d7ddd331475d019d2e8fe58b66f400692283c85e026565d5d9\\src\\System.Windows.Forms\\src\\System\\Windows\\Forms\\Control.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\Student_07\\AppData\\Local\\SourceServer\\d290a244de4fa3d7ddd331475d019d2e8fe58b66f400692283c85e026565d5d9\\src\\System.Windows.Forms\\src\\System\\Windows\\Forms\\Control.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AQIAACgKAAAAAAAAAAAiwEIKAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:49:00.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AdminForm.cs",
-              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\LoginPassword\\AdminForm.cs",
+              "DocumentMoniker": "C:\\Users\\Yurasik\\Desktop\\LoginPassword\\LoginPassword\\AdminForm.cs",
               "RelativeDocumentMoniker": "LoginPassword\\AdminForm.cs",
-              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\LoginPassword\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\Yurasik\\Desktop\\LoginPassword\\LoginPassword\\AdminForm.cs",
               "RelativeToolTip": "LoginPassword\\AdminForm.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAwwCEAAAAAAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwCgAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T14:42:16.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "AdminForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\LoginPassword\\AdminForm.cs",
+              "DocumentMoniker": "C:\\Users\\Yurasik\\Desktop\\LoginPassword\\LoginPassword\\AdminForm.cs",
               "RelativeDocumentMoniker": "LoginPassword\\AdminForm.cs",
-              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\LoginPassword\\AdminForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "C:\\Users\\Yurasik\\Desktop\\LoginPassword\\LoginPassword\\AdminForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "LoginPassword\\AdminForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T14:40:13.929Z",
@@ -55,24 +70,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\LoginPassword\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Yurasik\\Desktop\\LoginPassword\\LoginPassword\\Form1.cs",
               "RelativeDocumentMoniker": "LoginPassword\\Form1.cs",
-              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\LoginPassword\\Form1.cs",
+              "ToolTip": "C:\\Users\\Yurasik\\Desktop\\LoginPassword\\LoginPassword\\Form1.cs",
               "RelativeToolTip": "LoginPassword\\Form1.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAnwBAAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHYAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-07T08:57:56.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\LoginPassword\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Yurasik\\Desktop\\LoginPassword\\LoginPassword\\Form1.cs",
               "RelativeDocumentMoniker": "LoginPassword\\Form1.cs",
-              "ToolTip": "C:\\C_Projects\\C#\\Git\\C_Sharp\\LoginPassword\\LoginPassword\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "C:\\Users\\Yurasik\\Desktop\\LoginPassword\\LoginPassword\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "LoginPassword\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-07T08:46:20.696Z",

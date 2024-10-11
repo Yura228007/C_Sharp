@@ -23,10 +23,92 @@ namespace LoginPassword
                     comboBox_users.Items.Add(Path.GetFileNameWithoutExtension(file.Name));
                 }
             }
-            string[] post = new string[] { "HARDWORKER", "MIDLEWORKER", "LOWWORKER" };
-            comboBox_work.Items.AddRange(post);
             this.AcceptButton = button_save;
-            this.CancelButton = button1; 
+            this.CancelButton = button1;
+
+            Binding binding_forLogin = new Binding("Text", comboBox_users, "Text");
+            binding_forLogin.Format += (sender, e) =>
+            {
+                if (comboBox_users.Text.Length == 0)
+                {
+                    check_ok_login.Text = "x";
+                }
+                else
+                {
+                    check_ok_login.Text = "";
+                }
+            };
+            comboBox_users.DataBindings.Add(binding_forLogin);
+
+            Binding binding_forFio = new Binding("Text", textBox_fio, "Text");
+            binding_forFio.Format += (sender, e) =>
+            {
+                if (textBox_fio.Text.Length == 0)
+                {
+                    check_ok_fio.Text = "x";
+                }
+                else
+                {
+                    check_ok_fio.Text = "";
+                }
+            };
+            textBox_fio.DataBindings.Add(binding_forFio);
+
+            Binding binding_forOld = new Binding("Text", numericUpDown_old, "Text");
+            binding_forOld.Format += (sender, e) =>
+            {
+                if (numericUpDown_old.Value == 0)
+                {
+                    check_ok_old.Text = "x";
+                }
+                else
+                {
+                    check_ok_old.Text = "";
+                }
+            };
+            numericUpDown_old.DataBindings.Add(binding_forOld);
+
+            Binding binding_forWork = new Binding("Text", comboBox_work, "Text");
+            binding_forWork.Format += (sender, e) =>
+            {
+                if (comboBox_work.Text.Length == 0)
+                {
+                    check_ok_work.Text = "x";
+                }
+                else
+                {
+                    check_ok_work.Text = "";
+                }
+            };
+            comboBox_work.DataBindings.Add(binding_forWork);
+
+            Binding binding_forNumberTelephone = new Binding("Text", textBox_numberTelephone, "Text");
+            binding_forNumberTelephone.Format += (sender, e) =>
+            {
+                if (textBox_numberTelephone.Text.Length == 0)
+                {
+                    check_ok_numberTelephone.Text = "x";
+                }
+                else
+                {
+                    check_ok_numberTelephone.Text = "";
+                }
+            };
+            textBox_numberTelephone.DataBindings.Add(binding_forNumberTelephone);
+
+            Binding binding_forHomeNumber = new Binding("Text", textBox_homeNumber, "Text");
+            binding_forHomeNumber.Format += (sender, e) =>
+            {
+                if (textBox_homeNumber.Text.Length == 0 && checkBox_homeNumber.Checked)
+                {
+                    check_ok_homeNumber.Text = "x";
+                }
+                else
+                {
+                    check_ok_homeNumber.Text = "";
+                }
+            };
+            textBox_homeNumber.DataBindings.Add(binding_forHomeNumber);
         }
 
         private void AdminForm_Load(object sender, EventArgs e)

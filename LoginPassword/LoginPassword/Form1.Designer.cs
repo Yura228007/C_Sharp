@@ -53,6 +53,13 @@
             comboBox_login1 = new ComboBox();
             comboBox_work = new ComboBox();
             panel_userData = new Panel();
+            check_ok_homeNumber = new Label();
+            check_ok_numberTelephone = new Label();
+            check_ok_work = new Label();
+            check_ok_old = new Label();
+            check_ok_fio = new Label();
+            check_ok_password = new Label();
+            check_ok_login = new Label();
             button_back2 = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown_old).BeginInit();
             panel_userData.SuspendLayout();
@@ -306,6 +313,13 @@
             // 
             // panel_userData
             // 
+            panel_userData.Controls.Add(check_ok_homeNumber);
+            panel_userData.Controls.Add(check_ok_numberTelephone);
+            panel_userData.Controls.Add(check_ok_work);
+            panel_userData.Controls.Add(check_ok_old);
+            panel_userData.Controls.Add(check_ok_fio);
+            panel_userData.Controls.Add(check_ok_password);
+            panel_userData.Controls.Add(check_ok_login);
             panel_userData.Controls.Add(button_back2);
             panel_userData.Controls.Add(checkBox_homeNumber);
             panel_userData.Controls.Add(comboBox_work);
@@ -327,9 +341,79 @@
             panel_userData.Controls.Add(label5);
             panel_userData.Location = new Point(509, 69);
             panel_userData.Name = "panel_userData";
-            panel_userData.Size = new Size(667, 387);
+            panel_userData.Size = new Size(724, 387);
             panel_userData.TabIndex = 38;
             panel_userData.Visible = false;
+            // 
+            // check_ok_homeNumber
+            // 
+            check_ok_homeNumber.AutoSize = true;
+            check_ok_homeNumber.Font = new Font("Segoe UI", 14F);
+            check_ok_homeNumber.Location = new Point(626, 251);
+            check_ok_homeNumber.Name = "check_ok_homeNumber";
+            check_ok_homeNumber.Size = new Size(25, 25);
+            check_ok_homeNumber.TabIndex = 45;
+            check_ok_homeNumber.Text = "×";
+            // 
+            // check_ok_numberTelephone
+            // 
+            check_ok_numberTelephone.AutoSize = true;
+            check_ok_numberTelephone.Font = new Font("Segoe UI", 14F);
+            check_ok_numberTelephone.Location = new Point(626, 213);
+            check_ok_numberTelephone.Name = "check_ok_numberTelephone";
+            check_ok_numberTelephone.Size = new Size(25, 25);
+            check_ok_numberTelephone.TabIndex = 44;
+            check_ok_numberTelephone.Text = "×";
+            // 
+            // check_ok_work
+            // 
+            check_ok_work.AutoSize = true;
+            check_ok_work.Font = new Font("Segoe UI", 14F);
+            check_ok_work.Location = new Point(626, 175);
+            check_ok_work.Name = "check_ok_work";
+            check_ok_work.Size = new Size(25, 25);
+            check_ok_work.TabIndex = 43;
+            check_ok_work.Text = "×";
+            // 
+            // check_ok_old
+            // 
+            check_ok_old.AutoSize = true;
+            check_ok_old.Font = new Font("Segoe UI", 14F);
+            check_ok_old.Location = new Point(626, 137);
+            check_ok_old.Name = "check_ok_old";
+            check_ok_old.Size = new Size(25, 25);
+            check_ok_old.TabIndex = 42;
+            check_ok_old.Text = "×";
+            // 
+            // check_ok_fio
+            // 
+            check_ok_fio.AutoSize = true;
+            check_ok_fio.Font = new Font("Segoe UI", 14F);
+            check_ok_fio.Location = new Point(626, 99);
+            check_ok_fio.Name = "check_ok_fio";
+            check_ok_fio.Size = new Size(25, 25);
+            check_ok_fio.TabIndex = 41;
+            check_ok_fio.Text = "×";
+            // 
+            // check_ok_password
+            // 
+            check_ok_password.AutoSize = true;
+            check_ok_password.Font = new Font("Segoe UI", 14F);
+            check_ok_password.Location = new Point(626, 61);
+            check_ok_password.Name = "check_ok_password";
+            check_ok_password.Size = new Size(25, 25);
+            check_ok_password.TabIndex = 40;
+            check_ok_password.Text = "×";
+            // 
+            // check_ok_login
+            // 
+            check_ok_login.AutoSize = true;
+            check_ok_login.Font = new Font("Segoe UI", 14F);
+            check_ok_login.Location = new Point(626, 23);
+            check_ok_login.Name = "check_ok_login";
+            check_ok_login.Size = new Size(25, 25);
+            check_ok_login.TabIndex = 39;
+            check_ok_login.Text = "×";
             // 
             // button_back2
             // 
@@ -392,5 +476,12 @@
         private ComboBox comboBox_work;
         private Panel panel_userData;
         private Button button_back2;
+        private Label check_ok_login;
+        private Label check_ok_homeNumber;
+        private Label check_ok_numberTelephone;
+        private Label check_ok_work;
+        private Label check_ok_old;
+        private Label check_ok_fio;
+        private Label check_ok_password;
     }
 }
