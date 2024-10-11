@@ -1,0 +1,15 @@
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\bin\Debug\Task1_101024.exe.config
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\bin\Debug\Task1_101024.exe
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\bin\Debug\Task1_101024.pdb
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\Task1_101024.csproj.AssemblyReference.cache
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\MainWindow.g.cs
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\App.g.cs
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\Task1_101024_MarkupCompile.cache
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\Task1_101024_MarkupCompile.lref
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\MainWindow.baml
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\Task1_101024.g.resources
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\Task1_101024.Properties.Resources.resources
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\Task1_101024.csproj.GenerateResource.cache
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\Task1_101024.csproj.CoreCompileInputs.cache
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\Task1_101024.exe
+C:\Users\Student_07\Documents\Git_Yura\Task1_101024\obj\Debug\Task1_101024.pdb
